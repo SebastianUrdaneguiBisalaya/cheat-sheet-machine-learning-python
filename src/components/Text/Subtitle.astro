@@ -1,0 +1,9 @@
+---
+interface SubtitleProps {
+  text: string;
+  className?: string;
+}
+const { text, className } = Astro.props as SubtitleProps;
+---
+
+<h2 class="font-opensans text-xl font-semibold">{text}</h2>

@@ -1,0 +1,9 @@
+---
+interface CaptionProps {
+  text: string;
+  className?: string;
+}
+const { text, className } = Astro.props as CaptionProps;
+---
+
+<span class="font-opensans text-sm text-gray-light font-regular">{text}</span>

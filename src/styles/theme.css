@@ -1,3 +1,4 @@
 @theme {
-	--font-family: "Open Sans", sans-serif;
+	--font-opensans: "Open Sans", sans-serif;
+	--color-gray-light: #94A3B8;
 }

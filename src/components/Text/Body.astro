@@ -1,0 +1,9 @@
+---
+interface BodyProps {
+  text: string;
+  className?: string;
+}
+const { text, className } = Astro.props as BodyProps;
+---
+
+<p class="font-opensans text-base text-gray-light font-regular">{text}</p>
