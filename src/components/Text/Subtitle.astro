@@ -6,4 +6,4 @@ interface SubtitleProps {
 const { text, className } = Astro.props as SubtitleProps;
 ---
 
-<h2 class="font-opensans text-xl font-semibold">{text}</h2>
+<h2 class=`font-opensans text-xl font-semibold ${className}`>{text}</h2>

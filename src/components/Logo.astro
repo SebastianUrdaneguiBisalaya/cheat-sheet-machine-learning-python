@@ -1,8 +1,10 @@
 ---
 import { Image } from "astro:assets";
-import PythonIcon from "../assets/python.svg";
+import PythonIcon from "@assets/python.svg";
+import BodyText from "@components/Text/Body.astro";
 ---
 
-<div class="">
+<div class="flex flex-row justify-between items-center gap-2 h-full">
   <Image src={PythonIcon} alt="python-icon" width={20} height={20} />
+  <BodyText text="PyMachineLearning" className="text-white" />
 </div>
