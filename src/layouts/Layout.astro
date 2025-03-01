@@ -13,6 +13,16 @@ import "./src/styles/global.css";
   </head>
   <body>
     <slot />
+    <img
+      class="pattern-bottom-left"
+      src="./bg-blue.svg"
+      alt="background-pattern-bottom-left-blue"
+    />
+    <img
+      class="pattern-top-right"
+      src="./bg-purple.svg"
+      alt="background-pattern-top-right-purple"
+    />
   </body>
 </html>
 
@@ -33,7 +43,28 @@ import "./src/styles/global.css";
   body {
     width: 100%;
     height: 100%;
-    display: block;
+    display: flex;
+    flex-direction: column;
     background-color: var(--color-background);
+    position: relative;
+    overflow: hidden;
+  }
+  .pattern-bottom-left,
+  .pattern-top-right {
+    position: absolute;
+  }
+  .pattern-bottom-left {
+    bottom: 0;
+    left: 0;
+  }
+  .pattern-top-right {
+    top: 0;
+    right: 0;
+  }
+  @media (width <= 640px) {
+    .pattern-bottom-left,
+    .pattern-top-right {
+      display: none;
+    }
   }
 </style>
