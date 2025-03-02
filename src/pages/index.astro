@@ -1,6 +1,11 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Logo from "../components/Logo.astro";
+import { getCollection } from "astro:content";
+import Layout from "@layouts/Layout.astro";
+import Logo from "@components/Logo.astro";
+import Subtitle from "@components/Text/Subtitle.astro";
+import Caption from "@components/Text/Caption.astro";
+const indexs = await getCollection("indexs");
+console.log(indexs);
 ---
 
 <Layout>
@@ -8,7 +13,7 @@ import Logo from "../components/Logo.astro";
     class="flex flex-row justify-center items-center border-b-[0.5px] border-gray-light"
   >
     <nav
-      class="flex flex-row w-full justify-between items-center p-4 max-w-8xl"
+      class="flex flex-row w-full justify-between items-center py-4 px-4 lg:px-8 xl:px-12 max-w-8xl"
     >
       <Logo />
       <div class="flex flex-row justify-between items-center gap-6">
@@ -63,5 +68,24 @@ import Logo from "../components/Logo.astro";
       </div>
     </nav>
   </header>
-  <main></main>
+  <main
+    class="max-w-8xl min-h-screen relative flex flex-row px-4 lg:px-8 xl:px-12"
+  >
+    <aside id="sidebar" class="hidden lg:block lg:relative">
+      <div class="sticky top-[5.5rem] overflow-y-auto">
+        <div class="w-72">
+          <Subtitle text="Introducción" className="text-white" />
+          <ul>
+            <li>
+              <Caption text="Empezar" className="text-gray-light" />
+            </li>
+            <li>
+              <Caption text="Contribuir" className="text-gray-light" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+    <div id="container-info"></div>
+  </main>
 </Layout>
