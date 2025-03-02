@@ -5,7 +5,12 @@ import Logo from "@components/Logo.astro";
 import Subtitle from "@components/Text/Subtitle.astro";
 import Caption from "@components/Text/Caption.astro";
 const indexs = await getCollection("indexs");
-console.log(indexs);
+
+interface Index {
+		slug: string;
+		title: string;
+		link: string;
+}[];
 ---
 
 <Layout>
@@ -74,15 +79,20 @@ console.log(indexs);
     <aside id="sidebar" class="hidden lg:block lg:relative">
       <div class="sticky top-[5.5rem] overflow-y-auto">
         <div class="w-72">
-          <Subtitle text="Introducción" className="text-white" />
-          <ul>
-            <li>
-              <Caption text="Empezar" className="text-gray-light" />
-            </li>
-            <li>
-              <Caption text="Contribuir" className="text-gray-light" />
-            </li>
-          </ul>
+					{
+						indexs.map((index) => (
+							<Subtitle text={index.data.title} className="text-white" />
+							<ul>
+								{
+									index.data.items.map((info: Index) => (
+										<li>
+											<Caption text={info.title} className="text-gray-light" />
+										</li>
+									))
+								}
+							</ul>
+						))
+					}
         </div>
       </div>
     </aside>

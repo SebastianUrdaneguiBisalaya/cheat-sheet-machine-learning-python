@@ -1,130 +1,130 @@
 [
   {
-    "slug": "b781d1de-5ab2-4a8f-a204-3e5d935fc0d0",
+    "slug": "3cde5cea-3808-4007-bacd-da4b6cac73f6",
     "title": "Introducción",
     "items": [
       {
-        "slug": "a35fd22a-a566-4590-b7c4-c8150e1407c6",
-        "title": "Introducción",
-        "link": "http://localhost:4321/empezar"
+        "slug": "f31bf126-1265-433b-bbd1-ad930227e1db",
+        "title": "Empezar",
+        "link-es": "http://localhost:4321/empezar"
       },
       {
-        "slug": "26f228ec-80ce-40c7-bf80-5ce9c9efb2af",
-        "title": "Introducción",
-        "link": "http://localhost:4321/contribuciones"
+        "slug": "2d9b9bfb-e635-4d48-9258-5ca6667b3f3b",
+        "title": "Contribuciones",
+        "link-es": "http://localhost:4321/contribuciones"
       }
     ]
   },
   {
-    "slug": "16d3f98f-7a6b-4e29-9702-ef25bf61f577",
+    "slug": "5508fea8-6209-43d1-865f-b742b9b7ec06",
     "title": "Fundamentos ML",
     "items": [
       {
-        "slug": "6ed37b75-ab77-490c-a21c-0a9e319c0c4b",
-        "title": "Fundamentos ML",
-        "link": "http://localhost:4321/que-es-machine-learning"
+        "slug": "ce3092cd-cc90-41a7-b621-ea25d3cd9aba",
+        "title": "¿Qué es Machine Learning?",
+        "link-es": "http://localhost:4321/que-es-machine-learning"
       },
       {
-        "slug": "bd5743bc-2e23-4d6b-8942-6c899fd47cb9",
-        "title": "Fundamentos ML",
-        "link": "http://localhost:4321/tipos-de-machine-learning"
+        "slug": "6ec19250-6b71-4ca8-bd92-137f27b28843",
+        "title": "Tipos de Machine Learning",
+        "link-es": "http://localhost:4321/tipos-de-machine-learning"
       }
     ]
   },
   {
-    "slug": "00db967b-ccf3-4500-94b5-5de625147524",
+    "slug": "43291f0b-1600-41ae-802e-622250fc900d",
     "title": "Preparación de datos",
     "items": [
       {
-        "slug": "7cdc7683-c13c-4f2e-8b72-784c1923cd1b",
-        "title": "Preparación de datos",
-        "link": "http://localhost:4321/carga-y-exploracion-de-datos"
+        "slug": "446178a9-dc30-4ac9-8b7c-d636fc1cc07f",
+        "title": "Carga y exploración de datos",
+        "link-es": "http://localhost:4321/carga-y-exploracion-de-datos"
       },
       {
-        "slug": "90381d35-f1a4-44e9-9017-83520f11cca6",
-        "title": "Preparación de datos",
-        "link": "http://localhost:4321/manejo-de-valores-nulos"
+        "slug": "c379bfea-4020-493b-be03-d9b3ae0d45a8",
+        "title": "Manejo de valores nulos",
+        "link-es": "http://localhost:4321/manejo-de-valores-nulos"
       },
       {
-        "slug": "dc5ffe0a-d8d5-4527-b4a6-4894a14be093",
-        "title": "Preparación de datos",
-        "link": "http://localhost:4321/deteccion-y-tratamiento-de-outliers"
+        "slug": "9467a1aa-5934-4f37-923c-f7591fc1d4ad",
+        "title": "Detección y tratamiento de outliers",
+        "link-es": "http://localhost:4321/deteccion-y-tratamiento-de-outliers"
       },
       {
-        "slug": "b188f5e4-d763-401f-920e-582247422207",
-        "title": "Preparación de datos",
-        "link": "http://localhost:4321/normalizacion-y-estandarizacion"
+        "slug": "a2f92cb9-6cdd-4063-a53f-a705f71875ac",
+        "title": "Normalización y estandarización",
+        "link-es": "http://localhost:4321/normalizacion-y-estandarizacion"
       },
       {
-        "slug": "0367900d-d04b-4268-94f6-8a071f30ee1f",
-        "title": "Preparación de datos",
-        "link": "http://localhost:4321/codificacion-de-variables-categoricas"
+        "slug": "62601a33-941c-4d51-8cf3-4ec93541c901",
+        "title": "Codificación de variables categóricas",
+        "link-es": "http://localhost:4321/codificacion-de-variables-categoricas"
       },
       {
-        "slug": "9e879bb4-4541-4db7-a738-9d11855e1533",
-        "title": "Preparación de datos",
-        "link": "http://localhost:4321/creacion-de-nuevas-caracteristicas"
+        "slug": "7204544a-4eea-41fa-bfb4-d16bdd98da40",
+        "title": "Creación de nuevas características",
+        "link-es": "http://localhost:4321/creacion-de-nuevas-caracteristicas"
       },
       {
-        "slug": "10fa746c-4c2a-4d19-a829-0cc6bbafc72f",
-        "title": "Preparación de datos",
-        "link": "http://localhost:4321/seleccion-de-caracteristicas"
+        "slug": "16fd4803-9b72-41fc-8fcc-947d394f99c5",
+        "title": "Selección de características",
+        "link-es": "http://localhost:4321/seleccion-de-caracteristicas"
       },
       {
-        "slug": "3f00d0c6-4be8-402e-9332-074d024793a5",
-        "title": "Preparación de datos",
-        "link": "http://localhost:4321/division-en-entrenamiento-pruebas-y-test"
+        "slug": "2cabd9ed-5571-4ddf-9de0-d562e56add0c",
+        "title": "División en entrenamiento, pruebas y test",
+        "link-es": "http://localhost:4321/division-en-entrenamiento-pruebas-y-test"
       },
       {
-        "slug": "f4d21bd5-636e-40b9-8984-dd3adb0ae7f6",
-        "title": "Preparación de datos",
-        "link": "http://localhost:4321/balanceo-de-datos"
+        "slug": "bf6c0240-d924-4371-8446-4681112e0a1a",
+        "title": "Balanceo de datos",
+        "link-es": "http://localhost:4321/balanceo-de-datos"
       }
     ]
   },
   {
-    "slug": "c2fe41f2-4f6b-4d0f-a1f4-2e551c4cda11",
+    "slug": "a0247f03-891f-4e69-86bf-d522d25951d0",
     "title": "Modelos supervisados",
     "items": [
       {
-        "slug": "6f5096d4-99a6-4d3c-abf9-38b86d94c24b",
-        "title": "Modelos supervisados",
-        "link": "http://localhost:4321/regresion-lineal"
+        "slug": "b12ba965-5102-4a0e-99e0-d87efc3c3e59",
+        "title": "Regresión Lineal",
+        "link-es": "http://localhost:4321/regresion-lineal"
       },
       {
-        "slug": "44197359-b9bf-4928-aedf-c8eeada6165e",
-        "title": "Modelos supervisados",
-        "link": "http://localhost:4321/regresion-polinomica"
+        "slug": "61abdd71-ea20-4976-b58a-db805f821905",
+        "title": "Regresión Polinómica",
+        "link-es": "http://localhost:4321/regresion-polinomica"
       },
       {
-        "slug": "36125995-d8bc-4b90-9423-c940a72e6447",
-        "title": "Modelos supervisados",
-        "link": "http://localhost:4321/regresion-ridge-y-lasso"
+        "slug": "515c351d-14b6-4fda-b80f-fd67c2b1c115",
+        "title": "Regresión Ridge y Lasso",
+        "link-es": "http://localhost:4321/regresion-ridge-y-lasso"
       },
       {
-        "slug": "8e74b120-cd6c-4400-98cb-cc990003debb",
-        "title": "Modelos supervisados",
-        "link": "http://localhost:4321/regresion-logistica"
+        "slug": "01d9f9d4-7fbb-41d9-86ff-28125a654c50",
+        "title": "Regresión Logística",
+        "link-es": "http://localhost:4321/regresion-logistica"
       },
       {
-        "slug": "e097d779-e7d6-48ca-bf48-4c7689dffb72",
-        "title": "Modelos supervisados",
-        "link": "http://localhost:4321/knearest-neighbors"
+        "slug": "811452ad-acc3-4887-a7b7-fedc4c4da2bf",
+        "title": "K-Nearest Neighbors",
+        "link-es": "http://localhost:4321/knearest-neighbors"
       },
       {
-        "slug": "7b1e5ff2-dd64-4bfe-b812-3fc558046d37",
-        "title": "Modelos supervisados",
-        "link": "http://localhost:4321/arboles-de-decision"
+        "slug": "cd85329c-4486-4618-8224-1cc7131d2f0b",
+        "title": "Árboles de Decisión",
+        "link-es": "http://localhost:4321/arboles-de-decision"
       },
       {
-        "slug": "71c368e2-77c8-4a53-a45b-d74053b77dad",
-        "title": "Modelos supervisados",
-        "link": "http://localhost:4321/random-forest"
+        "slug": "63276fd9-d465-4078-89ff-4e23c6c60067",
+        "title": "Random Forest",
+        "link-es": "http://localhost:4321/random-forest"
       },
       {
-        "slug": "91422b47-9c5a-46d9-b2d7-9fdc2b9eddbc",
-        "title": "Modelos supervisados",
-        "link": "http://localhost:4321/gradient-boosting"
+        "slug": "b108b20c-8b23-418b-86d8-3de655a32daf",
+        "title": "Gradient Boosting",
+        "link-es": "http://localhost:4321/gradient-boosting"
       }
     ]
   }
