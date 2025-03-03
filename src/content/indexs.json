@@ -4,9 +4,9 @@
     "title": "Introducción",
     "items": [
       {
-        "slug": "empezar",
+        "slug": "index",
         "title": "Empezar",
-        "linkes": "/docs/empezar"
+        "linkes": "/"
       },
       {
         "slug": "contribuciones",
