@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content";
 import Layout from "@layouts/Layout.astro";
 import HomeLayout from "@layouts/HomeLayout.astro";
+import Title from "@components/Text/Title.astro";
 
 export async function getStaticPaths() {
   const indexs = await getCollection("indexs");
@@ -19,6 +20,6 @@ const { slug, title } = Astro.props;
 
 <Layout>
   <HomeLayout>
-    <h1>{title}</h1>
+    <Title text={title} className="text-white text-left" />
   </HomeLayout>
 </Layout>
