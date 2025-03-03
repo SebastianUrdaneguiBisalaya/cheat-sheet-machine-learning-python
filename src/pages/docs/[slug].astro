@@ -1,0 +1,24 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "@layouts/Layout.astro";
+import HomeLayout from "@layouts/HomeLayout.astro";
+
+export async function getStaticPaths() {
+  const indexs = await getCollection("indexs");
+  const res = indexs.flatMap((item) => item.data.items);
+  return res.map(({ slug, title, linkes }) => {
+    return {
+      params: { slug },
+      props: { slug, title, linkes },
+    };
+  });
+}
+
+const { slug, title } = Astro.props;
+---
+
+<Layout>
+  <HomeLayout>
+    <h1>{title}</h1>
+  </HomeLayout>
+</Layout>
