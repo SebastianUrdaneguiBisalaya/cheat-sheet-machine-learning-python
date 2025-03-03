@@ -1,5 +1,21 @@
 ---
 import Layout from "@layouts/Layout.astro";
+import Title from "@components/Text/Title.astro";
+import Body from "@components/Text/Body.astro";
+import Logo from "@components/Logo.astro";
 ---
 
-<Layout />
+<Layout>
+  <div class="w-full h-screen flex flex-col justify-center items-center gap-4">
+    <Logo />
+    <Body
+      text="404 ERROR"
+      className="text-center text-purple-500 font-semibold"
+    />
+    <Title text="Página no encontrada" className="text-center text-white" />
+    <Body
+      text="Disculpa, nosotros no encontramos la página que estás buscando."
+      className="text-center text-gray-400"
+    />
+  </div>
+</Layout>
