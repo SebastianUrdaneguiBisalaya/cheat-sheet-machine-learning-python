@@ -14,7 +14,7 @@ interface Index {
 ---
 <>
 	<header
-		class="w-full flex flex-row justify-center border-b-[0.5px] border-gray-500"
+		class="w-full flex flex-row justify-center border-b-[0.5px] border-gray-500 fixed top-0 z-10 bg-transparent backdrop-blur"
 	>
 		<nav
 			class="flex flex-row w-full justify-between items-center py-4 max-w-8xl px-2 sm:px6 lg:px-12"
@@ -72,12 +72,12 @@ interface Index {
 			</div>
 		</nav>
 	</header>
-	<main
-		class="max-w-8xl w-full min-h-screen relative flex flex-row px-2 sm:px6 lg:px-12"
+	<div
+		class="max-w-8xl w-full h-screen flex px-2 sm:px6 lg:px-12 mt-16"
 		>
-		<aside id="sidebar" class="hidden lg:block lg:relative">
-			<div class="scrollbar sticky top-[3.5rem] overflow-y-auto w-full h-[calc(100vh-3.5rem)] overflow-x-hidden">
-				<div class="w-72 py-10 pr-6 xl:pr-12">
+		<aside id="sidebar" class="hidden lg:block lg:inset-y-0 lg:fixed lg:bottom-0 lg:top-16">
+			<div class="scrollbar overflow-y-auto w-full h-[calc(100vh-3.5rem)] overflow-x-hidden">
+				<div class="w-72 py-10 pr-6">
 					{
 						indexs.map((index) => (
 							<Subtitle text={index.data.title} className="text-white" />
@@ -97,8 +97,10 @@ interface Index {
 				</div>
 			</div>
 		</aside>
-		<div id="container-info">
-			<slot />
-		</div>
-	</main>
+		<main id="container-info" class="pt-10 lg:ml-96">
+			<div class="px-0 lg:px-4">
+				<slot />
+			</div>
+		</main>
+	</div>
 </>

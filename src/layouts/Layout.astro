@@ -11,7 +11,7 @@ import { ClientRouter } from "astro:transitions";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>Machine Learning Python Cheat Sheet</title>
-    <ClientRouter />
+    <!-- <ClientRouter /> -->
   </head>
   <body>
     <slot />
@@ -52,7 +52,6 @@ import { ClientRouter } from "astro:transitions";
     flex-direction: column;
     align-items: center;
     background-color: var(--color-background);
-    position: relative;
-    overflow: hidden;
+    overflow-y: auto;
   }
 </style>

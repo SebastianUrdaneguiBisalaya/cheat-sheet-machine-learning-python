@@ -4,8 +4,10 @@
 
 .pattern-bottom-left,
 .pattern-top-right {
-	position: absolute;
+	position: fixed;
 	z-index: -1;
+	will-change: transform;
+  pointer-events: none; 
 }
 .pattern-bottom-left {
 	bottom: 0;
@@ -21,6 +23,24 @@
 		display: none;
 	}
 }
+
+html::-webkit-scrollbar {
+	width: var(--sb-size);
+}
+html::-webkit-scrollbar-track {
+	background: var(--sb-track-color);
+	border-radius: 0px;
+}
+html::-webkit-scrollbar-thumb {
+	background: var(--sb-thumb-color);
+	border-radius: 0px;
+}
+@supports not selector(::-webkit-scrollbar) {
+	html {
+		scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+	}
+}
+
 .scrollbar::-webkit-scrollbar {
 	width: var(--sb-size);
 }
