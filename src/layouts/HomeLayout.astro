@@ -86,7 +86,7 @@ interface Index {
 									index.data.items.map((info: Index) => (
 										<li class="pl-4 border-l-[2px] border-l-gray-700 py-0.5 w-full">
 											<a href={info.linkes} class="w-full block">
-												<Caption text={info.title} className="text-gray-400 block cursor-pointer hover:text-gray-200" />
+												<Caption text={info.title} className="text-gray-400 font-light block cursor-pointer hover:text-gray-200" />
 											</a>
 										</li>
 									))
@@ -97,8 +97,8 @@ interface Index {
 				</div>
 			</div>
 		</aside>
-		<main id="container-info" class="py-10 lg:ml-80">
-			<div class="flex-none xl:flex px-0 lg:px-4 max-w-2xl">
+		<main id="container-info" class="w-full relative py-10 lg:ml-80">
+			<div class="flex-none xl:flex px-0 lg:px-4">
 				<slot />
 			</div>
 		</main>
