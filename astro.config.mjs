@@ -9,9 +9,6 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
   markdown: {
-    shikiConfig: {
-      theme: "github-dark",
-      wrap: true,
-    },
+    syntaxHighlight: "prism",
   },
 });
