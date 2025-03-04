@@ -5,18 +5,6 @@ import HomeLayout from "@layouts/HomeLayout.astro";
 import Title from "@components/Text/Title.astro";
 import Caption from "@components/Text/Caption.astro";
 
-// export async function getStaticPaths() {
-//   const indexs = await getCollection("indexs");
-//   const res = indexs.flatMap((item) => item.data.items);
-//   return res.map(({ slug, title, linkes }) => {
-//     return {
-//       params: { slug },
-//       props: { slug, title, linkes },
-//     };
-//   });
-// }
-// const { slug, title } = Astro.props;
-
 export async function getStaticPaths() {
   const docsInfo = await getCollection("docsInfo");
   return docsInfo.map((item) => {
