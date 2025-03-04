@@ -1,28 +1,40 @@
 ---
-import { getCollection } from "astro:content";
+import { getCollection, render } from "astro:content";
 import Layout from "@layouts/Layout.astro";
 import HomeLayout from "@layouts/HomeLayout.astro";
 import Title from "@components/Text/Title.astro";
 import Caption from "@components/Text/Caption.astro";
 
+// export async function getStaticPaths() {
+//   const indexs = await getCollection("indexs");
+//   const res = indexs.flatMap((item) => item.data.items);
+//   return res.map(({ slug, title, linkes }) => {
+//     return {
+//       params: { slug },
+//       props: { slug, title, linkes },
+//     };
+//   });
+// }
+// const { slug, title } = Astro.props;
+
 export async function getStaticPaths() {
-  const indexs = await getCollection("indexs");
-  const res = indexs.flatMap((item) => item.data.items);
-  return res.map(({ slug, title, linkes }) => {
+  const docsInfo = await getCollection("docsInfo");
+  return docsInfo.map((item) => {
     return {
-      params: { slug },
-      props: { slug, title, linkes },
+      params: { slug: item.data.slug },
+      props: { title: item.data.title, item },
     };
   });
 }
-
-const { slug, title } = Astro.props;
+const { title, item } = Astro.props;
+const { Content } = await render(item);
 ---
 
 <Layout>
   <HomeLayout>
     <div class="max-w-2xl w-full">
       <Title text={title} className="text-white text-left" />
+      <Content />
     </div>
     <div class="h-full relative hidden xl:block">
       <div

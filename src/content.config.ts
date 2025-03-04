@@ -1,5 +1,5 @@
-import { defineCollection } from "astro:content";
-import { file } from "astro/loaders";
+import { defineCollection, z } from "astro:content";
+import { file, glob } from "astro/loaders";
 
 const indexs = defineCollection({
   loader: file("src/content/indexs.json", {
@@ -7,4 +7,15 @@ const indexs = defineCollection({
   }),
 });
 
-export const collections = { indexs };
+const docsInfo = defineCollection({
+  loader: glob({
+    pattern: ["*.md"],
+    base: "src/content/docs",
+  }),
+  schema: z.object({
+    slug: z.string(),
+    title: z.string(),
+  }),
+});
+
+export const collections = { indexs, docsInfo };
