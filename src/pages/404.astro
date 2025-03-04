@@ -7,7 +7,9 @@ import Logo from "@components/Logo.astro";
 ---
 
 <Layout>
-  <div class="w-full h-screen flex flex-col justify-center items-center gap-4">
+  <div
+    class="w-full min-h-screen flex flex-col justify-center items-center gap-4"
+  >
     <Logo />
     <Body
       text="404 ERROR"
@@ -16,7 +18,7 @@ import Logo from "@components/Logo.astro";
     <Title text="Página no encontrada" className="text-center text-white" />
     <Body
       text="Disculpa, nosotros no encontramos la página que estás buscando."
-      className="text-center text-gray-400 font-regular"
+      className="text-center text-slate-400 font-normal"
     />
     <div class="flex flex-row justify-center items-center gap-4 pt-8">
       <a href="/">
@@ -25,7 +27,7 @@ import Logo from "@components/Logo.astro";
           className="text-center text-purple-400 font-light"
         />
       </a>
-      <Caption text=" →" className="text-white font-light" />
+      <Caption text=" →" className="text-slate-200 font-light" />
     </div>
   </div>
 </Layout>

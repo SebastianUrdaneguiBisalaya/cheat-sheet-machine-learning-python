@@ -5,6 +5,15 @@ import Title from "@components/Text/Title.astro";
 import Subtitle from "@components/Text/Subtitle.astro";
 import Body from "@components/Text/Body.astro";
 import Caption from "@components/Text/Caption.astro";
+import Navigation from "@components/Navigation.astro";
+
+const directoryPages = [
+  {
+    side: "right",
+    title: "Contribuir",
+    link: "contribuir",
+  },
+];
 ---
 
 <Layout>
@@ -15,7 +24,9 @@ import Caption from "@components/Text/Caption.astro";
         <h2 class="text-white text-left text-4xl font-bold font-lexend">
           Cheat Sheet en Python
         </h2>
-        <h3 class="pt-4 text-white text-left text-xl font-semibold font-lexend">
+        <h3
+          class="pt-4 text-slate-200 text-left text-xl font-semibold font-lexend"
+        >
           Basado en el libro <a class="text-[#38BDF8]"
             >Python Machine Learning</a
           >
@@ -42,12 +53,12 @@ import Caption from "@components/Text/Caption.astro";
         </div>
         <Body
           text="Esta web es una guía rápida para profesionales y entusiastas de Machine Learning en Python. Contiene resúmenes estructurados, código optimizado y ejemplos prácticas para cada fase del desarrollo de modelos supervisados y no supervisados, desde la preparación de datos hasta la implementación."
-          className="text-white text-left font-regular"
+          className="text-slate-200 text-left font-normal"
         />
       </div>
       <Body
         text="Este es un proyecto open source, mantenido por la comunidad para ofrecer un recurso accesible y actualizado."
-        className="text-white text-left font-regular"
+        className="text-slate-200 text-left font-normal"
       />
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-4">
         <div class="flex flex-col justify-between items-start gap-4">
@@ -72,7 +83,7 @@ import Caption from "@components/Text/Caption.astro";
             <Subtitle text="Repositorio" className="text-white text-left" />
             <Body
               text="Bríndanos una estrella, si este recurso es útil para ti."
-              className="text-gray-400 text-left font-regular"
+              className="text-slate-400 text-left font-normal"
             />
           </div>
         </div>
@@ -94,7 +105,7 @@ import Caption from "@components/Text/Caption.astro";
             <Subtitle text="Contribuir" className="text-white text-left" />
             <Body
               text="Puedes contribuir con correcciones o nuevas secciones."
-              className="text-gray-400 text-left font-regular"
+              className="text-slate-400 text-left font-normal"
             />
           </div>
         </div>
@@ -103,8 +114,26 @@ import Caption from "@components/Text/Caption.astro";
         <Subtitle text="Contribuidores" className="text-white text-left" />
         <Caption
           text="Gracias a la comunidad de desarrolladores, analistas y científicos de datos que colaboran para mejorar y expandir esta guía."
-          className="text-gray-400 text-left font-light"
+          className="text-slate-400 text-left font-light"
         />
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 grid-flow-dense">
+        {
+          ["left", "right"].map((side) => {
+            const page = directoryPages.find((item) => item.side === side);
+            return page ? (
+              <Navigation
+                titleDirection={
+                  side === "left" ? "Página anterior" : "Página siguiente"
+                }
+                title={page.title}
+                link={page.link}
+              />
+            ) : (
+              <div />
+            );
+          })
+        }
       </div>
     </article>
   </HomeLayout>
