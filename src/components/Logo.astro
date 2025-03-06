@@ -3,7 +3,7 @@ import BodyText from "@components/Text/Body.astro";
 ---
 
 <div class="flex flex-row justify-between items-center gap-2">
-  <div class="block lg:hidden">
+  <div id="menu-mobile" class="block lg:hidden cursor-pointer">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="30"
@@ -36,3 +36,10 @@ import BodyText from "@components/Text/Body.astro";
     className="text-slate-200 hidden sm:block font-normal"
   />
 </div>
+
+<script>
+  const menuMobile = document.getElementById("menu-mobile");
+  menuMobile?.addEventListener("click", () => {
+    console.log("Hello");
+  });
+</script>
