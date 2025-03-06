@@ -9,7 +9,7 @@ const indexs = defineCollection({
 
 const docsInfo = defineCollection({
   loader: glob({
-    pattern: ["*.md"],
+    pattern: ["*.mdx"],
     base: "src/content/docs",
   }),
   schema: z.object({

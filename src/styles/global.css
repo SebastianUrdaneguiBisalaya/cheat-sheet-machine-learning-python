@@ -58,3 +58,17 @@ html::-webkit-scrollbar-thumb {
 		scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
 	}
 }
+
+p {
+	font-size: 16px;
+	line-height: 1.5;
+	font-family: "Lexend", sans-serif;
+	color: #90a1b9;
+}
+
+h2 {
+	font-size: 20px;
+	line-height: 1.4;
+	font-family: "Lexend", sans-serif;
+	color: #FFFFFF;
+}
