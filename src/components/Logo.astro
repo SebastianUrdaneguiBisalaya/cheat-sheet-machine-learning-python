@@ -32,10 +32,16 @@
 
 <script>
   const openSideBarMobile = document.getElementById("menu-mobile");
-  const containerSideBarMobile = document.getElementById("sidebar-mobile");
+  const containerSideBarMobile = document.getElementById(
+    "container-sidebar-mobile"
+  );
+  const sideBar = document.getElementById("sidebar-mobile");
   openSideBarMobile?.addEventListener("click", () => {
     document.body.classList.remove("overflow-y-auto");
     document.body.classList.add("overflow-y-hidden");
     containerSideBarMobile?.classList.remove("hidden");
+    setTimeout(() => {
+      sideBar?.classList.remove("-translate-x-full");
+    }, 10);
   });
 </script>
