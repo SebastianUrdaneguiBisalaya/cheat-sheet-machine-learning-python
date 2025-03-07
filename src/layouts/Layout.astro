@@ -1,6 +1,7 @@
 ---
 import "./src/styles/global.css";
 import { ClientRouter } from "astro:transitions";
+import NavbarMobile from "@components/NavbarMobile.astro";
 ---
 
 <!doctype html>
@@ -13,7 +14,9 @@ import { ClientRouter } from "astro:transitions";
     <title>Machine Learning Python Cheat Sheet</title>
     <ClientRouter />
   </head>
-  <body>
+  <body
+    class="m-0 p-0 w-full min-h-screen flex flex-col items-center bg-[#101927] overflow-y-auto"
+  >
     <slot />
     <img
       class="pattern-bottom-left"
@@ -25,6 +28,13 @@ import { ClientRouter } from "astro:transitions";
       src="/bg-purple.svg"
       alt="background-pattern-top-right-purple"
     />
+    <div
+      id="sidebar-mobile"
+      class="hidden fixed inset-0 z-50 lg:hidden overflow-y-auto scrollbar backdrop-blur"
+      role="dialog"
+    >
+      <NavbarMobile />
+    </div>
   </body>
 </html>
 
@@ -44,14 +54,5 @@ import { ClientRouter } from "astro:transitions";
     width: 100%;
     height: 100%;
     scroll-behavior: smooth;
-  }
-  body {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--color-background);
-    overflow-y: auto;
   }
 </style>

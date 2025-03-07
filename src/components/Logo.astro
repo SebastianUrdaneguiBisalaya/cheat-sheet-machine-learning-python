@@ -38,8 +38,11 @@ import BodyText from "@components/Text/Body.astro";
 </div>
 
 <script>
-  const menuMobile = document.getElementById("menu-mobile");
-  menuMobile?.addEventListener("click", () => {
-    console.log("Hello");
+  const openSideBarMobile = document.getElementById("menu-mobile");
+  const containerSideBarMobile = document.getElementById("sidebar-mobile");
+  openSideBarMobile?.addEventListener("click", () => {
+    document.body.classList.remove("overflow-y-auto");
+    document.body.classList.add("overflow-y-hidden");
+    containerSideBarMobile?.classList.remove("hidden");
   });
 </script>
