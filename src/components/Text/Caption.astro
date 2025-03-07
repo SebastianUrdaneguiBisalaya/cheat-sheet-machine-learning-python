@@ -1,0 +1,9 @@
+---
+interface CaptionProps {
+  text: string;
+  className?: string;
+}
+const { text, className } = Astro.props as CaptionProps;
+---
+
+<span class=`font-lexend text-sm ${className}`>{text}</span>

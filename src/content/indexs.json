@@ -1,0 +1,131 @@
+[
+  {
+    "slug": "3cde5cea-3808-4007-bacd-da4b6cac73f6",
+    "title": "Introducción",
+    "items": [
+      {
+        "slug": "index",
+        "title": "Empezar",
+        "linkes": "/"
+      },
+      {
+        "slug": "contribuir",
+        "title": "Contribuir",
+        "linkes": "/docs/contribuir"
+      }
+    ]
+  },
+  {
+    "slug": "5508fea8-6209-43d1-865f-b742b9b7ec06",
+    "title": "Fundamentos ML",
+    "items": [
+      {
+        "slug": "que-es-machine-learning",
+        "title": "¿Qué es Machine Learning?",
+        "linkes": "/docs/que-es-machine-learning"
+      },
+      {
+        "slug": "tipos-de-machine-learning",
+        "title": "Tipos de Machine Learning",
+        "linkes": "/docs/tipos-de-machine-learning"
+      }
+    ]
+  },
+  {
+    "slug": "43291f0b-1600-41ae-802e-622250fc900d",
+    "title": "Preparación de datos",
+    "items": [
+      {
+        "slug": "carga-y-exploracion-de-datos",
+        "title": "Carga y exploración de datos",
+        "linkes": "/docs/carga-y-exploracion-de-datos"
+      },
+      {
+        "slug": "manejo-de-valores-nulos",
+        "title": "Manejo de valores nulos",
+        "linkes": "/docs/manejo-de-valores-nulos"
+      },
+      {
+        "slug": "deteccion-y-tratamiento-de-outliers",
+        "title": "Detección y tratamiento de outliers",
+        "linkes": "/docs/deteccion-y-tratamiento-de-outliers"
+      },
+      {
+        "slug": "normalizacion-y-estandarizacion",
+        "title": "Normalización y estandarización",
+        "linkes": "/docs/normalizacion-y-estandarizacion"
+      },
+      {
+        "slug": "codificacion-de-variables-categoricas",
+        "title": "Codificación de variables categóricas",
+        "linkes": "/docs/codificacion-de-variables-categoricas"
+      },
+      {
+        "slug": "creacion-de-nuevas-caracteristicas",
+        "title": "Creación de nuevas características",
+        "linkes": "/docs/creacion-de-nuevas-caracteristicas"
+      },
+      {
+        "slug": "seleccion-de-caracteristicas",
+        "title": "Selección de características",
+        "linkes": "/docs/seleccion-de-caracteristicas"
+      },
+      {
+        "slug": "division-en-entrenamiento-pruebas-y-test",
+        "title": "División en entrenamiento, pruebas y test",
+        "linkes": "/docs/division-en-entrenamiento-pruebas-y-test"
+      },
+      {
+        "slug": "balanceo-de-datos",
+        "title": "Balanceo de datos",
+        "linkes": "/docs/balanceo-de-datos"
+      }
+    ]
+  },
+  {
+    "slug": "a0247f03-891f-4e69-86bf-d522d25951d0",
+    "title": "Modelos supervisados",
+    "items": [
+      {
+        "slug": "regresion-lineal",
+        "title": "Regresión Lineal",
+        "linkes": "/docs/regresion-lineal"
+      },
+      {
+        "slug": "regresion-polinomica",
+        "title": "Regresión Polinómica",
+        "linkes": "/docs/regresion-polinomica"
+      },
+      {
+        "slug": "regresion-ridge-y-lasso",
+        "title": "Regresión Ridge y Lasso",
+        "linkes": "/docs/regresion-ridge-y-lasso"
+      },
+      {
+        "slug": "regresion-logistica",
+        "title": "Regresión Logística",
+        "linkes": "/docs/regresion-logistica"
+      },
+      {
+        "slug": "knearest-neighbors",
+        "title": "K-Nearest Neighbors",
+        "linkes": "/docs/knearest-neighbors"
+      },
+      {
+        "slug": "arboles-de-decision",
+        "title": "Árboles de Decisión",
+        "linkes": "/docs/arboles-de-decision"
+      },
+      {
+        "slug": "random-forest",
+        "title": "Random Forest",
+        "linkes": "/docs/random-forest"
+      },
+      {
+        "slug": "gradient-boosting",
+        "title": "Gradient Boosting",
+        "linkes": "/docs/gradient-boosting"
+      }
+    ]
+  }
+]
