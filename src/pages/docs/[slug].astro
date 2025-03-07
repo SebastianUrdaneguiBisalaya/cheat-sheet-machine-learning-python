@@ -20,13 +20,13 @@ const { Content } = await render(item);
 
 <Layout>
   <HomeLayout>
-    <div class="max-w-2xl w-full">
+    <div class="max-w-full xl:max-w-2xl w-full">
       <Title text={title} className="text-white text-left" />
       <Content />
     </div>
     <div class="h-full relative hidden xl:block">
       <div
-        class="w-56 h-[calc(100vh-3.5rem)] pr-6 fixed overflow-y-auto scrollbar"
+        class="w-56 h-[calc(100vh-8rem)] pr-6 fixed overflow-y-auto scrollbar"
       >
         <nav>
           <Caption text="Contenido" className="text-white font-bold" />
