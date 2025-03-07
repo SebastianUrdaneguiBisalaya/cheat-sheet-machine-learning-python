@@ -1,8 +1,5 @@
 ---
 import Layout from "@layouts/Layout.astro";
-import Title from "@components/Text/Title.astro";
-import Body from "@components/Text/Body.astro";
-import Caption from "@components/Text/Caption.astro";
 import Logo from "@components/Logo.astro";
 ---
 
@@ -11,23 +8,18 @@ import Logo from "@components/Logo.astro";
     class="w-full min-h-screen flex flex-col justify-center items-center gap-4"
   >
     <Logo />
-    <Body
-      text="404 ERROR"
-      className="text-center text-purple-500 font-semibold pt-8"
-    />
-    <Title text="Página no encontrada" className="text-center text-white" />
-    <Body
-      text="Disculpa, nosotros no encontramos la página que estás buscando."
-      className="text-center text-slate-400 font-normal"
-    />
+    <p class="text-center text-purple-500 font-semibold pt-8">404 ERROR</p>
+    <h1 class="text-center text-white">Página no encontrada</h1>
+    <p class="text-center text-slate-400 font-normal">
+      Disculpa, nosotros no encontramos la página que estás buscando.
+    </p>
     <div class="flex flex-row justify-center items-center gap-4 pt-8">
       <a href="/">
-        <Caption
-          text="Regresar al inicio"
-          className="text-center text-purple-400 font-light"
-        />
+        <span class="text-center text-purple-400 font-light"
+          >Regresar al inicio</span
+        >
       </a>
-      <Caption text=" →" className="text-slate-200 font-light" />
+      <span class="text-slate-200 font-light"> →</span>
     </div>
   </div>
 </Layout>

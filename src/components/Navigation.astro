@@ -1,7 +1,4 @@
 ---
-import Body from "@components/Text/Body.astro";
-import Caption from "@components/Text/Caption.astro";
-
 interface NavigationProps {
   titleDirection: string;
   title: string;
@@ -14,6 +11,6 @@ const { titleDirection, title, link } = Astro.props as NavigationProps;
   href={`docs/${link}`}
   class="w-full grid grid-cols-1 border-[0.5px] border-gray-700 rounded-lg px-4 py-6 cursor-pointer hover:border-[#38BDF8] hover:bg-[#38BDF8]/5"
 >
-  <Caption text={titleDirection} className="text-slate-400 font-light" />
-  <Body text={title} className="text-[#38BDF8] font-normal" />
+  <span class="text-slate-400 font-light">{titleDirection}</span>
+  <p class="text-[#38BDF8]">{title}</p>
 </a>

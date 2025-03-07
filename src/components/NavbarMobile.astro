@@ -1,7 +1,5 @@
 ---
 import { getCollection } from "astro:content";
-import Subtitle from "@components/Text/Subtitle.astro";
-import Caption from "@components/Text/Caption.astro";
 const indexs = await getCollection("indexs");
 
 interface Index {
@@ -18,13 +16,13 @@ interface Index {
 		</div>
 		{
 			indexs.map((index) => (
-				<Subtitle text={index.data.title} className="text-white" />
+				<h2 id="index-title">{index.data.title}</h2>
 				<ul class="list-none py-4">
 					{
 						index.data.items.map((info: Index) => (
 							<li class="pl-4 border-l-[2px] border-l-slate-600 py-0.5 w-full hover:border-l-slate-200">
 								<a href={info.linkes} class="w-full block">
-									<Caption text={info.title} className="text-slate-400 font-light block cursor-pointer hover:text-slate-200" />
+									<span class="text-slate-400 font-light block cursor-pointer hover:text-slate-200">{info.title}</span>
 								</a>
 							</li>
 						))

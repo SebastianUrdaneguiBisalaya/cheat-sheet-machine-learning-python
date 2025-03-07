@@ -4,6 +4,41 @@
 @import "./theme.css";
 @import "./prism.css";
 
+h1 {
+	font-size: 36px;
+	line-height: 1.1111;
+	font-family: "Lexend", sans-serif;
+	font-weight: 700;
+	color: #FFFFFF;
+	width: 100%;
+	padding-bottom: 1.5rem;
+}
+
+h2:not(#second-main-title) {
+	font-size: 20px;
+	line-height: 1.4;
+	font-family: "Lexend", sans-serif;
+	color: #FFFFFF;
+	width: 100%;
+}
+
+h2:not(#index-title) {
+	padding: 1rem 0;
+}
+
+p:not(#name-logo) {
+	font-size: 16px;
+	line-height: 1.5;
+	font-family: "Lexend", sans-serif;
+	color: #90a1b9;
+}
+
+span {
+	font-size: 14px;
+	line-height: 1.4286;
+	font-family: "Lexend", sans-serif;
+}
+
 .pattern-bottom-left,
 .pattern-top-right {
 	position: fixed;
@@ -57,18 +92,4 @@ html::-webkit-scrollbar-thumb {
 	.scrollbar {
 		scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
 	}
-}
-
-p {
-	font-size: 16px;
-	line-height: 1.5;
-	font-family: "Lexend", sans-serif;
-	color: #90a1b9;
-}
-
-h2 {
-	font-size: 20px;
-	line-height: 1.4;
-	font-family: "Lexend", sans-serif;
-	color: #FFFFFF;
 }

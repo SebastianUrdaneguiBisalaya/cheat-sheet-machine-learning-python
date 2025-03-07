@@ -2,8 +2,6 @@
 import { getCollection, render } from "astro:content";
 import Layout from "@layouts/Layout.astro";
 import HomeLayout from "@layouts/HomeLayout.astro";
-import Title from "@components/Text/Title.astro";
-import Caption from "@components/Text/Caption.astro";
 
 export async function getStaticPaths() {
   const docsInfo = await getCollection("docsInfo");
@@ -21,7 +19,7 @@ const { Content } = await render(item);
 <Layout>
   <HomeLayout>
     <div class="max-w-full xl:max-w-2xl w-full">
-      <Title text={title} className="text-white text-left" />
+      <h1 class="text-left">{title}</h1>
       <Content />
     </div>
     <div class="h-full relative hidden xl:block">
@@ -29,14 +27,14 @@ const { Content } = await render(item);
         class="w-56 h-[calc(100vh-8rem)] pr-6 fixed overflow-y-auto scrollbar"
       >
         <nav>
-          <Caption text="Contenido" className="text-white font-bold" />
+          <span class="text-white font-bold">Contenido</span>
           <ul class="list-none">
             <li class="py-0.5">
               <a href="">
-                <Caption
-                  text="Item 1"
-                  className="text-slate-400 font-normal block cursor-pointer hover:text-slate-200"
-                />
+                <span
+                  class="text-slate-400 font-normal block cursor-pointer hover:text-slate-200"
+                  >Item 1</span
+                >
               </a>
             </li>
           </ul>

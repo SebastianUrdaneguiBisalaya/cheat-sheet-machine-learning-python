@@ -1,10 +1,6 @@
 ---
 import Layout from "@layouts/Layout.astro";
 import HomeLayout from "@layouts/HomeLayout.astro";
-import Title from "@components/Text/Title.astro";
-import Subtitle from "@components/Text/Subtitle.astro";
-import Body from "@components/Text/Body.astro";
-import Caption from "@components/Text/Caption.astro";
 import Navigation from "@components/Navigation.astro";
 
 const directoryPages = [
@@ -20,8 +16,11 @@ const directoryPages = [
   <HomeLayout>
     <article class="flex flex-col gap-10 max-w-full xl:max-w-2xl">
       <div class="flex flex-col gap-2">
-        <Title text="Machine Learning" className="text-white text-left" />
-        <h2 class="text-white text-left text-4xl font-bold font-lexend">
+        <h1 class="text-left">Machine Learning</h1>
+        <h2
+          id="second-main-title"
+          class="text-white text-left text-4xl font-bold font-lexend"
+        >
           Cheat Sheet en Python
         </h2>
         <h3
@@ -51,15 +50,18 @@ const directoryPages = [
             ></path></svg
           >
         </div>
-        <Body
-          text="Esta web es una guía rápida para profesionales y entusiastas de Machine Learning en Python. Contiene resúmenes estructurados, código optimizado y ejemplos prácticas para cada fase del desarrollo de modelos supervisados y no supervisados, desde la preparación de datos hasta la implementación."
-          className="text-slate-200 text-left font-normal"
-        />
+        <p class="text-left font-normal">
+          Esta web es una guía rápida para profesionales y entusiastas de
+          Machine Learning en Python. Contiene resúmenes estructurados, código
+          optimizado y ejemplos prácticas para cada fase del desarrollo de
+          modelos supervisados y no supervisados, desde la preparación de datos
+          hasta la implementación.
+        </p>
       </div>
-      <Body
-        text="Este es un proyecto open source, mantenido por la comunidad para ofrecer un recurso accesible y actualizado."
-        className="text-slate-200 text-left font-normal"
-      />
+      <p class="text-left font-normal">
+        Este es un proyecto open source, mantenido por la comunidad para ofrecer
+        un recurso accesible y actualizado.
+      </p>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-4">
         <div class="flex flex-col justify-between items-start gap-4">
           <svg
@@ -80,11 +82,10 @@ const directoryPages = [
             ></svg
           >
           <div class="flex flex-col gap-2">
-            <Subtitle text="Repositorio" className="text-white text-left" />
-            <Body
-              text="Bríndanos una estrella, si este recurso es útil para ti."
-              className="text-slate-400 text-left font-normal"
-            />
+            <h2 class="text-left">Repositorio</h2>
+            <p class="text-slate-400 text-left font-normal">
+              Bríndanos una estrella, si este recurso es útil para ti.
+            </p>
           </div>
         </div>
         <div class="flex flex-col justify-between items-start gap-4">
@@ -102,20 +103,19 @@ const directoryPages = [
             ></path></svg
           >
           <div class="flex flex-col gap-2">
-            <Subtitle text="Contribuir" className="text-white text-left" />
-            <Body
-              text="Puedes contribuir con correcciones o nuevas secciones."
-              className="text-slate-400 text-left font-normal"
-            />
+            <h2 class="text-left">Contribuir</h2>
+            <p class="text-slate-400 text-left font-normal">
+              Puedes contribuir con correcciones o nuevas secciones.
+            </p>
           </div>
         </div>
       </div>
       <div class="flex flex-col gap-2">
-        <Subtitle text="Contribuidores" className="text-white text-left" />
-        <Caption
-          text="Gracias a la comunidad de desarrolladores, analistas y científicos de datos que colaboran para mejorar y expandir esta guía."
-          className="text-slate-400 text-left font-light"
-        />
+        <h2 class="text-left">Contribuidores</h2>
+        <span class="text-slate-400 text-left font-light"
+          >Gracias a la comunidad de desarrolladores, analistas y científicos de
+          datos que colaboran para mejorar y expandir esta guía.</span
+        >
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4 grid-flow-dense">
         {
