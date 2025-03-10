@@ -29,6 +29,10 @@ h2:not(#index-title, #second-main-title) {
 	padding: 1rem 0;
 }
 
+h2:is(#repository, #contribute) {
+	padding: 0.5rem 0;
+}
+
 p:not(#name-logo) {
 	font-size: 16px;
 	line-height: 1.5;
