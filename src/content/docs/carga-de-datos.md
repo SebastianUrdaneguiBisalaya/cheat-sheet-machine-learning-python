@@ -17,7 +17,7 @@ navigation: [
 	{
 		side: "right",
 		title: "Exploración de datos",
-		link: "/docs/exploracion-de-datos",
+		link: "/data-processing/exploracion-de-datos",
 	},
 ]
 ---
