@@ -11,7 +11,7 @@
       {
         "slug": "contribuir",
         "title": "Contribuir",
-        "linkes": "/data-processing/contribuir"
+        "linkes": "/es/data-processing/contribuir"
       }
     ]
   },
@@ -22,12 +22,12 @@
       {
         "slug": "que-es-machine-learning",
         "title": "¿Qué es Machine Learning?",
-        "linkes": "/introduction/que-es-machine-learning"
+        "linkes": "/es/introduction/que-es-machine-learning"
       },
       {
         "slug": "tipos-de-machine-learning",
         "title": "Tipos de Machine Learning",
-        "linkes": "/introduction/tipos-de-machine-learning"
+        "linkes": "/es/introduction/tipos-de-machine-learning"
       }
     ]
   },
@@ -38,52 +38,52 @@
       {
         "slug": "carga-de-datos",
         "title": "Carga de datos",
-        "linkes": "/data-processing/carga-de-datos"
+        "linkes": "/es/data-processing/carga-de-datos"
       },
 			{
         "slug": "exploracion-de-datos",
         "title": "Exploración de datos",
-        "linkes": "/data-processing/exploracion-de-datos"
+        "linkes": "/es/data-processing/exploracion-de-datos"
       },
       {
         "slug": "manejo-de-valores-nulos",
         "title": "Manejo de valores nulos",
-        "linkes": "/data-processing/manejo-de-valores-nulos"
+        "linkes": "/es/data-processing/manejo-de-valores-nulos"
       },
       {
         "slug": "deteccion-y-tratamiento-de-outliers",
         "title": "Detección y tratamiento de outliers",
-        "linkes": "/data-processing/deteccion-y-tratamiento-de-outliers"
+        "linkes": "/es/data-processing/deteccion-y-tratamiento-de-outliers"
       },
       {
         "slug": "normalizacion-y-estandarizacion",
         "title": "Normalización y estandarización",
-        "linkes": "/data-processing/normalizacion-y-estandarizacion"
+        "linkes": "/es/data-processing/normalizacion-y-estandarizacion"
       },
       {
         "slug": "codificacion-de-variables-categoricas",
         "title": "Codificación de variables categóricas",
-        "linkes": "/data-processing/codificacion-de-variables-categoricas"
+        "linkes": "/es/data-processing/codificacion-de-variables-categoricas"
       },
       {
         "slug": "creacion-de-nuevas-caracteristicas",
         "title": "Creación de nuevas características",
-        "linkes": "/data-processing/creacion-de-nuevas-caracteristicas"
+        "linkes": "/es/data-processing/creacion-de-nuevas-caracteristicas"
       },
       {
         "slug": "seleccion-de-caracteristicas",
         "title": "Selección de características",
-        "linkes": "/data-processing/seleccion-de-caracteristicas"
+        "linkes": "/es/data-processing/seleccion-de-caracteristicas"
       },
       {
         "slug": "division-en-entrenamiento-pruebas-y-test",
         "title": "División en entrenamiento, pruebas y test",
-        "linkes": "/data-processing/division-en-entrenamiento-pruebas-y-test"
+        "linkes": "/es/data-processing/division-en-entrenamiento-pruebas-y-test"
       },
       {
         "slug": "balanceo-de-datos",
         "title": "Balanceo de datos",
-        "linkes": "/data-processing/balanceo-de-datos"
+        "linkes": "/es/data-processing/balanceo-de-datos"
       }
     ]
   },
@@ -94,42 +94,42 @@
       {
         "slug": "regresion-lineal",
         "title": "Regresión Lineal",
-        "linkes": "/models/regresion-lineal"
+        "linkes": "/es/models/regresion-lineal"
       },
       {
         "slug": "regresion-polinomica",
         "title": "Regresión Polinómica",
-        "linkes": "/models/regresion-polinomica"
+        "linkes": "/es/models/regresion-polinomica"
       },
       {
         "slug": "regresion-ridge-y-lasso",
         "title": "Regresión Ridge y Lasso",
-        "linkes": "/models/regresion-ridge-y-lasso"
+        "linkes": "/es/models/regresion-ridge-y-lasso"
       },
       {
         "slug": "regresion-logistica",
         "title": "Regresión Logística",
-        "linkes": "/models/regresion-logistica"
+        "linkes": "/es/models/regresion-logistica"
       },
       {
         "slug": "knearest-neighbors",
         "title": "K-Nearest Neighbors",
-        "linkes": "/models/knearest-neighbors"
+        "linkes": "/es/models/knearest-neighbors"
       },
       {
         "slug": "arboles-de-decision",
         "title": "Árboles de Decisión",
-        "linkes": "/models/arboles-de-decision"
+        "linkes": "/es/models/arboles-de-decision"
       },
       {
         "slug": "random-forest",
         "title": "Random Forest",
-        "linkes": "/models/random-forest"
+        "linkes": "/es/models/random-forest"
       },
       {
         "slug": "gradient-boosting",
         "title": "Gradient Boosting",
-        "linkes": "/models/gradient-boosting"
+        "linkes": "/es/models/gradient-boosting"
       }
     ]
   }

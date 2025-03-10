@@ -11,4 +11,8 @@ export default defineConfig({
   markdown: {
     syntaxHighlight: "prism",
   },
+  i18n: {
+    defaultLocale: "es",
+    locales: ["es", "en"],
+  },
 });

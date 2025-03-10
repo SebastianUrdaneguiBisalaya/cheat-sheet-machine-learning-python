@@ -2,7 +2,7 @@ import { defineCollection, z } from "astro:content";
 import { file, glob } from "astro/loaders";
 
 const indexs = defineCollection({
-  loader: file("src/content/indexs.json", {
+  loader: file("src/content/es/indexs.json", {
     parser: (text) => JSON.parse(text),
   }),
 });
@@ -10,7 +10,7 @@ const indexs = defineCollection({
 const introductionInfo = defineCollection({
   loader: glob({
     pattern: ["*.md"],
-    base: "src/content/introduction",
+    base: "src/content/es/introduction",
   }),
   schema: z.object({
     slug: z.string(),
@@ -38,7 +38,7 @@ const introductionInfo = defineCollection({
 const dataProcessingInfo = defineCollection({
   loader: glob({
     pattern: ["*.md"],
-    base: "src/content/data-processing",
+    base: "src/content/es/data-processing",
   }),
   schema: z.object({
     slug: z.string(),
@@ -66,7 +66,7 @@ const dataProcessingInfo = defineCollection({
 const modelsInfo = defineCollection({
   loader: glob({
     pattern: ["*.md"],
-    base: "src/content/models",
+    base: "src/content/es/models",
   }),
   schema: z.object({
     slug: z.string(),
