@@ -1,0 +1,30 @@
+---
+import Navigation from "./Navigation.astro";
+interface NavigationContainerProps {
+  data: {
+    side: string;
+    title: string;
+    link: string;
+  }[];
+}
+const { data } = Astro.props as NavigationContainerProps;
+---
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 grid-flow-dense pt-6">
+  {
+    ["left", "right"].map((side) => {
+      const page = data?.find((item) => item.side === side);
+      return page ? (
+        <Navigation
+          titleDirection={
+            side === "left" ? "Página anterior" : "Página siguiente"
+          }
+          title={page.title}
+          link={page.link}
+        />
+      ) : (
+        <div />
+      );
+    })
+  }
+</div>

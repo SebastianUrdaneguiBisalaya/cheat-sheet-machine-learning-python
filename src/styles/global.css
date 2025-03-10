@@ -25,7 +25,7 @@ h2:not(#second-main-title) {
 	scroll-margin-top: 100px;
 }
 
-h2:not(#index-title) {
+h2:not(#index-title, #second-main-title) {
 	padding: 1rem 0;
 }
 
