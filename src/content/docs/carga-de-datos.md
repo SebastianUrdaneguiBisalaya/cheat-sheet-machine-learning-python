@@ -1,12 +1,24 @@
 ---
 slug: carga-de-datos
-title: Carga de Datos
+title: Carga de datos
 content: [
 	{slug: "carga-de-datos-desde-un-archivo-csv", title: "Carga de datos desde un archivo CSV"},
 	{slug: "carga-de-datos-desde-un-archivo-excel", title: "Carga de datos desde un archivo Excel"},
 	{slug: "carga-de-datos-desde-un-archivo-json", title: "Carga de datos desde un archivo JSON"},
 	{slug: "carga-de-datos-desde-un-archivo-txt", title: "Carga de datos desde un archivo TXT"},
 	{slug: "carga-de-datos-desde-un-archivo-sql", title: "Carga de datos desde un archivo SQL"},
+]
+navigation: [
+	{
+		side: "left",
+		title: "Balanceo de datos",
+		link: "balanceo-de-datos",
+	},
+	{
+		side: "right",
+		title: "Exploración de datos",
+		link: "/docs/exploracion-de-datos",
+	},
 ]
 ---
 
