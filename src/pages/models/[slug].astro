@@ -5,8 +5,8 @@ import HomeLayout from "@layouts/HomeLayout.astro";
 import NavigationContainer from "@components/NavigationContainer.astro";
 
 export async function getStaticPaths() {
-  const dataProcessingInfo = await getCollection("dataProcessingInfo");
-  return dataProcessingInfo.map((item) => {
+  const modelsInfo = await getCollection("modelsInfo");
+  return modelsInfo.map((item) => {
     return {
       params: { slug: item.data.slug },
       props: {

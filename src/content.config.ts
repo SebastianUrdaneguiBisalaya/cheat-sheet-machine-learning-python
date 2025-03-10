@@ -7,10 +7,10 @@ const indexs = defineCollection({
   }),
 });
 
-const docsInfo = defineCollection({
+const dataProcessingInfo = defineCollection({
   loader: glob({
     pattern: ["*.md"],
-    base: "src/content/docs",
+    base: "src/content/data-processing",
   }),
   schema: z.object({
     slug: z.string(),
@@ -35,4 +35,32 @@ const docsInfo = defineCollection({
   }),
 });
 
-export const collections = { indexs, docsInfo };
+const modelsInfo = defineCollection({
+  loader: glob({
+    pattern: ["*.md"],
+    base: "src/content/models",
+  }),
+  schema: z.object({
+    slug: z.string(),
+    title: z.string(),
+    content: z
+      .array(
+        z.object({
+          slug: z.string(),
+          title: z.string(),
+        })
+      )
+      .optional(),
+    navigation: z
+      .array(
+        z.object({
+          side: z.enum(["left", "right"]),
+          title: z.string(),
+          link: z.string(),
+        })
+      )
+      .optional(),
+  }),
+});
+
+export const collections = { indexs, dataProcessingInfo, modelsInfo };
