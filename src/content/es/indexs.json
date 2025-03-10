@@ -45,6 +45,11 @@
         "title": "Exploración de datos",
         "linkes": "/es/data-processing/exploracion-de-datos"
       },
+			{
+				"slug": "estadistica-descriptiva",
+				"title": "Estadística descriptiva",
+				"linkes": "/es/data-processing/estadistica-descriptiva"
+			},
       {
         "slug": "manejo-de-valores-nulos",
         "title": "Manejo de valores nulos",

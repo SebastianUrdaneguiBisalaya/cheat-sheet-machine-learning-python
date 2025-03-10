@@ -4,8 +4,8 @@ title: Manejo de valores nulos
 navigation: [
 	{
 		side: "left",
-		title: "Exploración de datos",
-		link: "exploracion-de-datos",
+		title: "Estadística descriptiva",
+		link: "estadistica-descriptiva",
 	},
 	{
 		side: "right",
