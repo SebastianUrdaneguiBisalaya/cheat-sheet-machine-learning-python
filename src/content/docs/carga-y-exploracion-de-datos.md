@@ -1,6 +1,13 @@
 ---
 slug: carga-y-exploracion-de-datos
 title: Carga y Exploración de Datos
+content: [
+	{slug: "carga-de-datos-desde-un-archivo-csv", title: "Carga de datos desde un archivo CSV"},
+	{slug: "carga-de-datos-desde-un-archivo-excel", title: "Carga de datos desde un archivo Excel"},
+	{slug: "carga-de-datos-desde-un-archivo-json", title: "Carga de datos desde un archivo JSON"},
+	{slug: "carga-de-datos-desde-un-archivo-txt", title: "Carga de datos desde un archivo TXT"},
+	{slug: "carga-de-datos-desde-un-archivo-sql", title: "Carga de datos desde un archivo SQL"},
+]
 ---
 
 El primer paso en cualquier proyecto de Machine Learning es la carga y exploración de los datos. La calidad y
@@ -59,7 +66,9 @@ más populares para el análisis de datos.
 ```python
 >>> import pandas as pd
 >>> from pandas import DataFrame
+>>> from sqlalchemy import create_engine # Aplica para conectarse a PostgreSQL, MySQL/MariaDB y SQL Server 
 
+>>> engine = create_engine("mssql+pyodbc://your_user:your_password@your_server/your_database_name?driver=ODBC+Driver+17+for+SQL+Server") # Conexión a SQL Server
 >>> df: DataFrame = pd.read_sql_query("SELECT * FROM data", 
 ...									con=engine)
 

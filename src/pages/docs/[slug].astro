@@ -8,11 +8,11 @@ export async function getStaticPaths() {
   return docsInfo.map((item) => {
     return {
       params: { slug: item.data.slug },
-      props: { title: item.data.title, item },
+      props: { title: item.data.title, content: item.data.content, item },
     };
   });
 }
-const { title, item } = Astro.props;
+const { title, content, item } = Astro.props;
 const { Content } = await render(item);
 ---
 
@@ -30,12 +30,15 @@ const { Content } = await render(item);
           <span class="text-white font-bold">Contenido</span>
           <ul class="list-none">
             <li class="py-0.5">
-              <a href="">
-                <span
-                  class="text-slate-400 font-normal block cursor-pointer hover:text-slate-200"
-                  >Item 1</span
-                >
-              </a>
+              {
+                content?.map((item) => (
+                  <a href={`carga-y-exploracion-de-datos#${item.slug}`}>
+                    <span class="text-slate-400 font-normal block cursor-pointer hover:text-slate-200">
+                      {item.title}
+                    </span>
+                  </a>
+                ))
+              }
             </li>
           </ul>
         </nav>

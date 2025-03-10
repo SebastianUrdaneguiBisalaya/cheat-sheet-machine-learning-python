@@ -15,6 +15,14 @@ const docsInfo = defineCollection({
   schema: z.object({
     slug: z.string(),
     title: z.string(),
+    content: z
+      .array(
+        z.object({
+          slug: z.string(),
+          title: z.string(),
+        })
+      )
+      .optional(),
   }),
 });
 
