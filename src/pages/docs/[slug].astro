@@ -28,8 +28,8 @@ const { Content } = await render(item);
       >
         <nav>
           <span class="text-white font-bold">Contenido</span>
-          <ul class="list-none">
-            <li class="py-0.5">
+          <ul class="list-none mt-4">
+            <li class="flex flex-col gap-2 py-0.5">
               {
                 content?.map((item) => (
                   <a href={`carga-y-exploracion-de-datos#${item.slug}`}>

@@ -19,6 +19,7 @@ h2:not(#second-main-title) {
 	font-family: "Lexend", sans-serif;
 	color: #FFFFFF;
 	width: 100%;
+	scroll-margin-top: 100px;
 }
 
 h2:not(#index-title) {
