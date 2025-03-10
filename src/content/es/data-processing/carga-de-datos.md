@@ -26,13 +26,16 @@ El primer paso en cualquier proyecto de Machine Learning es la carga de los dato
 presentan los métodos esenciales para manejar datos en Python, utilizando la biblioteca **pandas**, una de las
 más populares para el análisis de datos.
 
-
-## Carga de datos desde un archivo CSV		
+<br>
 
 ```python
 >>> import pandas as pd
 >>> from pandas import DataFrame # Definir el tipo de dataframe
+```
 
+## Carga de datos desde un archivo CSV		
+
+```python
 >>> df: DataFrame = pd.read_csv("data.csv", sep=";") # Separador por defecto es ","
 
 >>> print(df.head())
@@ -41,9 +44,6 @@ más populares para el análisis de datos.
 ## Carga de datos desde un archivo Excel
 
 ```python
->>> import pandas as pd
->>> from pandas import DataFrame
-
 >>> df: DataFrame = pd.read_excel("data.xlsx", 
 ...								sheet_name="Sheet1") # Nombre de la hoja de cálculo
 
@@ -53,9 +53,6 @@ más populares para el análisis de datos.
 ## Carga de datos desde un archivo JSON
 
 ```python
->>> import pandas as pd
->>> from pandas import DataFrame
-
 >>> df: DataFrame = pd.read_json("data.json")
 
 >>> print(df.to_string())
@@ -64,9 +61,6 @@ más populares para el análisis de datos.
 ## Carga de datos desde un archivo TXT
 
 ```python
->>> import pandas as pd
->>> from pandas import DataFrame
-
 >>> df: DataFrame = pd.read_csv("data.txt")
 
 >>> print(df.head())
@@ -75,8 +69,6 @@ más populares para el análisis de datos.
 ## Carga de datos desde un archivo SQL
 
 ```python
->>> import pandas as pd
->>> from pandas import DataFrame
 >>> from sqlalchemy import create_engine # Aplica para conectarse a PostgreSQL, MySQL/MariaDB y SQL Server 
 
 >>> engine = create_engine("mssql+pyodbc://your_user:your_password@your_server/your_database_name?driver=ODBC+Driver+17+for+SQL+Server") # Conexión a SQL Server
