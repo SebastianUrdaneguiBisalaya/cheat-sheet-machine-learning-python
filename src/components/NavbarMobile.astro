@@ -21,7 +21,7 @@ interface Index {
 					{
 						index.data.items.map((info: Index) => (
 							<li class="pl-4 border-l-[2px] border-l-slate-600 py-0.5 w-full hover:border-l-slate-200">
-								<a href={info.linkes} class="w-full block">
+								<a id="sidebar-left-link" href={info.linkes} class="w-full block">
 									<span class="text-slate-400 font-light block cursor-pointer hover:text-slate-200">{info.title}</span>
 								</a>
 							</li>
@@ -34,15 +34,17 @@ interface Index {
 </aside>
 
 <script>
-	const buttonCloseSideBarMobile = document.getElementById("button-close-sidebar-mobile");
-	const containerSideBarMobile = document.getElementById("container-sidebar-mobile");
-	const sideBar = document.getElementById("sidebar-mobile");
-	buttonCloseSideBarMobile?.addEventListener("click", () => {
-		sideBar?.classList.add("-translate-x-full");
-		setTimeout(() => {
-			containerSideBarMobile?.classList.add("hidden");
-			document.body.classList.remove("overflow-y-hidden");
-		document.body.classList.add("overflow-y-auto");
-		}, 10);
-	});
+	document.addEventListener("astro:page-load", () => {
+		const buttonCloseSideBarMobile = document.getElementById("button-close-sidebar-mobile");
+		const containerSideBarMobile = document.getElementById("container-sidebar-mobile");
+		const sideBar = document.getElementById("sidebar-mobile");
+		buttonCloseSideBarMobile?.addEventListener("click", () => {
+			sideBar?.classList.add("-translate-x-full");
+			setTimeout(() => {
+				containerSideBarMobile?.classList.add("hidden");
+				document.body.classList.remove("overflow-y-hidden");
+				document.body.classList.add("overflow-y-auto");
+			}, 10);
+		});
+		})
 </script>
