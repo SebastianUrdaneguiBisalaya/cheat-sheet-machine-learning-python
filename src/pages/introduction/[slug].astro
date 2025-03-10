@@ -1,0 +1,57 @@
+---
+import { getCollection, render } from "astro:content";
+import Layout from "@layouts/Layout.astro";
+import HomeLayout from "@layouts/HomeLayout.astro";
+import NavigationContainer from "@components/NavigationContainer.astro";
+
+export async function getStaticPaths() {
+  const introductionInfo = await getCollection("introductionInfo");
+  return introductionInfo.map((item) => {
+    return {
+      params: { slug: item.data.slug },
+      props: {
+        title: item.data.title,
+        content: item.data.content,
+        navigation: item.data.navigation,
+        item,
+      },
+    };
+  });
+}
+const { title, content, navigation, item } = Astro.props;
+const { Content } = await render(item);
+---
+
+<Layout>
+  <HomeLayout>
+    <div class="max-w-full xl:max-w-2xl w-full">
+      <h1 class="text-left">{title}</h1>
+      <Content />
+      <NavigationContainer data={navigation} />
+    </div>
+    <div class="h-full relative hidden xl:block">
+      <div
+        class="w-56 h-[calc(100vh-8rem)] pr-6 fixed overflow-y-auto scrollbar"
+      >
+        {
+          content && content.length > 0 && (
+            <nav>
+              <span class="text-white font-bold">Contenido</span>
+              <ul class="list-none mt-4">
+                <li class="flex flex-col gap-2 py-0.5">
+                  {content?.map((item) => (
+                    <a href={`carga-y-exploracion-de-datos#${item.slug}`}>
+                      <span class="text-slate-400 font-normal block cursor-pointer hover:text-slate-200">
+                        {item.title}
+                      </span>
+                    </a>
+                  ))}
+                </li>
+              </ul>
+            </nav>
+          )
+        }
+      </div>
+    </div>
+  </HomeLayout>
+</Layout>

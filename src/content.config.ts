@@ -7,6 +7,34 @@ const indexs = defineCollection({
   }),
 });
 
+const introductionInfo = defineCollection({
+  loader: glob({
+    pattern: ["*.md"],
+    base: "src/content/introduction",
+  }),
+  schema: z.object({
+    slug: z.string(),
+    title: z.string(),
+    content: z
+      .array(
+        z.object({
+          slug: z.string(),
+          title: z.string(),
+        })
+      )
+      .optional(),
+    navigation: z
+      .array(
+        z.object({
+          side: z.enum(["left", "right"]),
+          title: z.string(),
+          link: z.string(),
+        })
+      )
+      .optional(),
+  }),
+});
+
 const dataProcessingInfo = defineCollection({
   loader: glob({
     pattern: ["*.md"],
@@ -63,4 +91,9 @@ const modelsInfo = defineCollection({
   }),
 });
 
-export const collections = { indexs, dataProcessingInfo, modelsInfo };
+export const collections = {
+  indexs,
+  introductionInfo,
+  dataProcessingInfo,
+  modelsInfo,
+};

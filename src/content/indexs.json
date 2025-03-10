@@ -22,12 +22,12 @@
       {
         "slug": "que-es-machine-learning",
         "title": "¿Qué es Machine Learning?",
-        "linkes": "/data-processing/que-es-machine-learning"
+        "linkes": "/introduction/que-es-machine-learning"
       },
       {
         "slug": "tipos-de-machine-learning",
         "title": "Tipos de Machine Learning",
-        "linkes": "/data-processing/tipos-de-machine-learning"
+        "linkes": "/introduction/tipos-de-machine-learning"
       }
     ]
   },
