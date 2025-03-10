@@ -1,6 +1,6 @@
 ---
-slug: carga-y-exploracion-de-datos
-title: Carga y Exploración de Datos
+slug: carga-de-datos
+title: Carga de Datos
 content: [
 	{slug: "carga-de-datos-desde-un-archivo-csv", title: "Carga de datos desde un archivo CSV"},
 	{slug: "carga-de-datos-desde-un-archivo-excel", title: "Carga de datos desde un archivo Excel"},
@@ -10,9 +10,8 @@ content: [
 ]
 ---
 
-El primer paso en cualquier proyecto de Machine Learning es la carga y exploración de los datos. La calidad y
-la comprensión de los datos impactan directamente en el rendimiento de los modelos. A continuación, se
-presentan los métodos esenciales para manejar datos en Python, utilizando la biblioteca pandas, una de las
+El primer paso en cualquier proyecto de Machine Learning es la carga de los datos. A continuación, se
+presentan los métodos esenciales para manejar datos en Python, utilizando la biblioteca **pandas**, una de las
 más populares para el análisis de datos.
 
 

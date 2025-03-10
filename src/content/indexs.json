@@ -36,9 +36,14 @@
     "title": "Preparación de datos",
     "items": [
       {
-        "slug": "carga-y-exploracion-de-datos",
-        "title": "Carga y exploración de datos",
-        "linkes": "/docs/carga-y-exploracion-de-datos"
+        "slug": "carga-de-datos",
+        "title": "Carga de datos",
+        "linkes": "/docs/carga-de-datos"
+      },
+			{
+        "slug": "exploracion-de-datos",
+        "title": "Exploración de datos",
+        "linkes": "/docs/exploracion-de-datos"
       },
       {
         "slug": "manejo-de-valores-nulos",

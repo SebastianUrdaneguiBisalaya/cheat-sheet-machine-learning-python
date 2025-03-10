@@ -10,6 +10,9 @@ h1 {
 	font-weight: 700;
 	color: #FFFFFF;
 	width: 100%;
+}
+
+h1:not(#title-main) {
 	padding-bottom: 1.5rem;
 }
 
@@ -37,6 +40,10 @@ span {
 	font-size: 14px;
 	line-height: 1.4286;
 	font-family: "Lexend", sans-serif;
+}
+
+strong {
+	color: var(--color-blue-strong);
 }
 
 .pattern-bottom-left,
