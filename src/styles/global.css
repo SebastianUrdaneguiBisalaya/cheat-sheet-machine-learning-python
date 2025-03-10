@@ -15,10 +15,13 @@ h1:not(#title-main) {
 	padding-bottom: 1.5rem;
 }
 
+h2 {
+	font-family: "Lexend Variable", sans-serif;
+}
+
 h2:not(#second-main-title) {
 	font-size: 20px;
 	line-height: 1.4;
-	font-family: "Lexend Variable", sans-serif;
 	color: #FFFFFF;
 	width: 100%;
 	scroll-margin-top: 100px;
