@@ -46,6 +46,10 @@ strong {
 	color: var(--color-blue-strong);
 }
 
+ins {
+	color: var(--color-blue-strong);
+}
+
 .pattern-bottom-left,
 .pattern-top-right {
 	position: fixed;
