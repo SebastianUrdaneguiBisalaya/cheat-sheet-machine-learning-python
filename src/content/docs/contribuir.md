@@ -5,7 +5,7 @@ navigation: [
 	{
 		side: "left",
 		title: "Empezar",
-		link: "empezar"
+		link: "/"
 	}
 ]
 ---
