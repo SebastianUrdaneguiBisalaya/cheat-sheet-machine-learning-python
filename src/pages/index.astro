@@ -1,22 +1,21 @@
 ---
 import Layout from "@layouts/Layout.astro";
 import HomeLayout from "@layouts/HomeLayout.astro";
-import Navigation from "@components/Navigation.astro";
-
-const directoryPages = [
+import NavigationContainer from "@components/NavigationContainer.astro";
+const mainDirectoryPage = [
   {
     side: "right",
     title: "Contribuir",
-    link: "contribuir",
+    link: "es/data-processing/contribuir",
   },
 ];
 ---
 
 <Layout>
   <HomeLayout>
-    <article class="flex flex-col gap-10 max-w-full xl:max-w-2xl">
+    <article class="flex flex-col max-w-full xl:max-w-2xl">
       <div class="flex flex-col gap-2">
-        <h1 class="text-left">Machine Learning</h1>
+        <h1 id="title-main" class="text-left">Machine Learning</h1>
         <h2
           id="second-main-title"
           class="text-white text-left text-4xl font-bold font-lexend"
@@ -32,7 +31,7 @@ const directoryPages = [
           y otros recursos
         </h3>
       </div>
-      <div class="flex flex-col md:flex-row items-start gap-4">
+      <div class="flex flex-col md:flex-row items-start gap-4 py-6">
         <div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -62,8 +61,12 @@ const directoryPages = [
         Este es un proyecto open source, mantenido por la comunidad para ofrecer
         un recurso accesible y actualizado.
       </p>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-4">
-        <div class="flex flex-col justify-between items-start gap-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-4 py-6">
+        <a
+          href="https://github.com/SebastianUrdaneguiBisalaya/cheat-sheet-machine-learning-python"
+          target="_blank"
+          class="flex flex-col justify-between items-start border-[0.5px] border-gray-700 rounded-lg cursor-pointer hover:border-[#38BDF8] hover:bg-[#38BDF8]/5 p-4"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="30"
@@ -81,14 +84,17 @@ const directoryPages = [
               ></path></g
             ></svg
           >
-          <div class="flex flex-col gap-2">
-            <h2 class="text-left">Repositorio</h2>
+          <div class="flex flex-col">
+            <h2 id="repository" class="text-left">Repositorio</h2>
             <p class="text-slate-400 text-left font-normal">
               Bríndanos una estrella, si este recurso es útil para ti.
             </p>
           </div>
-        </div>
-        <div class="flex flex-col justify-between items-start gap-4">
+        </a>
+        <a
+          href="data-processing/contribuir"
+          class="flex flex-col justify-between items-start border-[0.5px] border-gray-700 rounded-lg cursor-pointer hover:border-[#38BDF8] hover:bg-[#38BDF8]/5 p-4"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="30"
@@ -102,39 +108,22 @@ const directoryPages = [
               d="M8.266 11.908a1.773 1.773 0 0 1-2.527 0L1.49 7.7c-2.84-2.842.87-9.12 5.511-4.478c4.634-4.633 8.344 1.644 5.511 4.478z"
             ></path></svg
           >
-          <div class="flex flex-col gap-2">
-            <h2 class="text-left">Contribuir</h2>
+          <div class="flex flex-col">
+            <h2 id="contribute" class="text-left">Contribuir</h2>
             <p class="text-slate-400 text-left font-normal">
               Puedes contribuir con correcciones o nuevas secciones.
             </p>
           </div>
-        </div>
+        </a>
       </div>
-      <div class="flex flex-col gap-2">
+      <div class="flex flex-col">
         <h2 class="text-left">Contribuidores</h2>
         <span class="text-slate-400 text-left font-light"
           >Gracias a la comunidad de desarrolladores, analistas y científicos de
           datos que colaboran para mejorar y expandir esta guía.</span
         >
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 grid-flow-dense">
-        {
-          ["left", "right"].map((side) => {
-            const page = directoryPages.find((item) => item.side === side);
-            return page ? (
-              <Navigation
-                titleDirection={
-                  side === "left" ? "Página anterior" : "Página siguiente"
-                }
-                title={page.title}
-                link={page.link}
-              />
-            ) : (
-              <div />
-            );
-          })
-        }
-      </div>
+      <NavigationContainer data={mainDirectoryPage} />
     </article>
   </HomeLayout>
 </Layout>

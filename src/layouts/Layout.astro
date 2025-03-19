@@ -1,5 +1,6 @@
 ---
 import "./src/styles/global.css";
+import "@fontsource-variable/lexend";
 import { ClientRouter } from "astro:transitions";
 import NavbarMobile from "@components/NavbarMobile.astro";
 ---
@@ -29,8 +30,8 @@ import NavbarMobile from "@components/NavbarMobile.astro";
       alt="background-pattern-top-right-purple"
     />
     <div
-      id="sidebar-mobile"
-      class="hidden fixed inset-0 z-50 lg:hidden overflow-y-auto scrollbar backdrop-blur"
+      id="container-sidebar-mobile"
+      class="fixed inset-0 z-50 lg:hidden overflow-y-auto scrollbar backdrop-blur hidden"
       role="dialog"
     >
       <NavbarMobile />
@@ -41,6 +42,7 @@ import NavbarMobile from "@components/NavbarMobile.astro";
 <style>
   :root {
     --color-background: #101927;
+    --color-blue-strong: #38bdf8;
     --sb-track-color: #364153;
     --sb-thumb-color: #626873;
     --sb-size: 8px;
