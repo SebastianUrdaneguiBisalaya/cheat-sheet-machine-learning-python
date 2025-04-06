@@ -4,7 +4,7 @@
 
 h1 {
 	font-size: 36px;
-	line-height: 1.1111;
+	line-height: 1.2;
 	font-family: "Lexend Variable", sans-serif;
 	font-weight: 700;
 	color: #FFFFFF;
@@ -21,7 +21,7 @@ h2, h3 {
 
 h2:not(#second-main-title) {
 	font-size: 20px;
-	line-height: 1.4;
+	line-height: 1.25;
 	color: #FFFFFF;
 	width: 100%;
 	scroll-margin-top: 100px;
@@ -47,7 +47,6 @@ p:not(#name-logo, #name-of-navigation-pages) {
 
 span {
 	font-size: 14px;
-	line-height: 1.4286;
 	font-family: "Lexend Variable", sans-serif;
 	color: #cccccc;
 }
