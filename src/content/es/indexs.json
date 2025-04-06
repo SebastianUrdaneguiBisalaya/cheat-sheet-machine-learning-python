@@ -12,7 +12,12 @@
         "slug": "contribuir",
         "title": "Contribuir",
         "linkes": "/es/data-processing/contribuir"
-      }
+      },
+			{
+				"slug": "lista-de-recursos",
+				"title": "Lista de recursos",
+				"linkes": "/es/data-processing/lista-de-recursos"
+			}
     ]
   },
   {
@@ -137,5 +142,11 @@
         "linkes": "/es/models/gradient-boosting"
       }
     ]
-  }
+  },
+	{
+		"slug": "a0247f03-891f-4e69-86ed-d522d25951d0",
+    "title": "Estrategias analíticas",
+    "items": [
+		]
+	}
 ]
