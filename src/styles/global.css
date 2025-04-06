@@ -35,7 +35,6 @@ h2:is(#repository, #contribute) {
 	padding: 0.5rem 0;
 }
 
-
 p {
 	font-size: 16px;
 	line-height: 1.5;
@@ -43,13 +42,18 @@ p {
 }
 
 p:not(#name-logo, #name-of-navigation-pages) {
-	color: #90a1b9;
+	color: #cccccc;
 }
 
 span {
 	font-size: 14px;
 	line-height: 1.4286;
 	font-family: "Lexend Variable", sans-serif;
+	color: #cccccc;
+}
+
+span:hover {
+	color: var(--color-blue-strong);
 }
 
 strong {
