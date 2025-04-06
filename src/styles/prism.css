@@ -61,7 +61,7 @@
  :not(pre) > code[class*="language-"],
  pre[class*="language-"] {
 	 color: white;
-	 background: #011627;
+	 background: #202125;
  }
  
  :not(pre) > code[class*="language-"] {

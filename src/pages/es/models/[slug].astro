@@ -36,12 +36,12 @@ const { Content } = await render(item);
         {
           content && content.length > 0 && (
             <nav>
-              <span class="text-white font-bold">Contenido</span>
+              <span class="font-bold">Contenido</span>
               <ul class="list-none mt-4">
                 <li class="flex flex-col gap-2 py-0.5">
                   {content?.map((item) => (
                     <a href={`carga-y-exploracion-de-datos#${item.slug}`}>
-                      <span class="text-slate-400 font-normal block cursor-pointer hover:text-slate-200">
+                      <span class="font-normal block cursor-pointer">
                         {item.title}
                       </span>
                     </a>

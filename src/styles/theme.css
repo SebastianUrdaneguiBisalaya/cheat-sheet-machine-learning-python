@@ -1,4 +1,5 @@
 @theme {
-	--font-lexend: "Lexend", sans-serif;
 	--spacing-8xl: 88rem;
+	--color-blue-strong: var(--color-blue-strong);
+	--color-background: var(--color-background);
 }

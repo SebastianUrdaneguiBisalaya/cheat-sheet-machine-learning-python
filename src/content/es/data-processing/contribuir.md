@@ -6,6 +6,11 @@ navigation: [
 		side: "left",
 		title: "Empezar",
 		link: "/"
+	},
+	{
+		side: "right",
+		title: "Lista de recursos",
+		link: "lista-de-recursos",
 	}
 ]
 ---

@@ -4,7 +4,7 @@
 
 h1 {
 	font-size: 36px;
-	line-height: 1.1111;
+	line-height: 1.2;
 	font-family: "Lexend Variable", sans-serif;
 	font-weight: 700;
 	color: #FFFFFF;
@@ -15,13 +15,13 @@ h1:not(#title-main) {
 	padding-bottom: 1.5rem;
 }
 
-h2 {
+h2, h3 {
 	font-family: "Lexend Variable", sans-serif;
 }
 
 h2:not(#second-main-title) {
 	font-size: 20px;
-	line-height: 1.4;
+	line-height: 1.25;
 	color: #FFFFFF;
 	width: 100%;
 	scroll-margin-top: 100px;
@@ -39,13 +39,20 @@ p {
 	font-size: 16px;
 	line-height: 1.5;
 	font-family: "Lexend Variable", sans-serif;
-	color: #90a1b9;
+}
+
+p:not(#name-logo, #name-of-navigation-pages) {
+	color: #cccccc;
 }
 
 span {
 	font-size: 14px;
-	line-height: 1.4286;
 	font-family: "Lexend Variable", sans-serif;
+	color: #cccccc;
+}
+
+span:hover {
+	color: var(--color-blue-strong);
 }
 
 strong {
@@ -54,27 +61,6 @@ strong {
 
 ins {
 	color: var(--color-blue-strong);
-}
-
-.pattern-bottom-left,
-.pattern-top-right {
-	position: fixed;
-	z-index: -1;
-  pointer-events: none; 
-}
-.pattern-bottom-left {
-	bottom: 0;
-	left: 0;
-}
-.pattern-top-right {
-	top: 0;
-	right: 0;
-}
-@media (width <= 640px) {
-	.pattern-bottom-left,
-	.pattern-top-right {
-		display: none;
-	}
 }
 
 html::-webkit-scrollbar, .scrollbar::-webkit-scrollbar, pre::-webkit-scrollbar {
