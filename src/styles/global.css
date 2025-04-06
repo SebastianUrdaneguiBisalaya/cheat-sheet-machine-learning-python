@@ -39,6 +39,9 @@ p {
 	font-size: 16px;
 	line-height: 1.5;
 	font-family: "Lexend Variable", sans-serif;
+}
+
+p:not(#name-logo) {
 	color: #90a1b9;
 }
 
@@ -54,27 +57,6 @@ strong {
 
 ins {
 	color: var(--color-blue-strong);
-}
-
-.pattern-bottom-left,
-.pattern-top-right {
-	position: fixed;
-	z-index: -1;
-  pointer-events: none; 
-}
-.pattern-bottom-left {
-	bottom: 0;
-	left: 0;
-}
-.pattern-top-right {
-	top: 0;
-	right: 0;
-}
-@media (width <= 640px) {
-	.pattern-bottom-left,
-	.pattern-top-right {
-		display: none;
-	}
 }
 
 html::-webkit-scrollbar, .scrollbar::-webkit-scrollbar, pre::-webkit-scrollbar {
