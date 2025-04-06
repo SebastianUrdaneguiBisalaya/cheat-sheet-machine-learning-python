@@ -15,7 +15,7 @@ h1:not(#title-main) {
 	padding-bottom: 1.5rem;
 }
 
-h2 {
+h2, h3 {
 	font-family: "Lexend Variable", sans-serif;
 }
 
@@ -35,13 +35,14 @@ h2:is(#repository, #contribute) {
 	padding: 0.5rem 0;
 }
 
+
 p {
 	font-size: 16px;
 	line-height: 1.5;
 	font-family: "Lexend Variable", sans-serif;
 }
 
-p:not(#name-logo) {
+p:not(#name-logo, #name-of-navigation-pages) {
 	color: #90a1b9;
 }
 
