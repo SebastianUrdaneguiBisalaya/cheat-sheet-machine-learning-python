@@ -4,13 +4,17 @@ title: Estadística descriptiva
 content: [
 	{slug: "mean", title: "mean()"},
 	{slug: "median", title: "median()"},
-	{slug: "truncated_mean", title: "truncated_mean()"},
+	{slug: "trim_mean", title: "trim_mean()"},
 	{slug: "weighted_mean", title: "weighted_mean()"},
 	{slug: "weighted_median", title: "weighted_median()"},
 	{slug: "mode", title: "mode()"},
 	{slug: "corr", title: "corr()"},
 	{slug: "cov", title: "cov()"},
 	{slug: "mean", title: "mean()"},
+	{slug: "var", title: "var()"},
+	{slug: "std", title: "std()"},
+	{slug: "mad", title: "mad()"},
+	{slug: "quantile", title: "quantile()"},
 ]
 navigation: [
 	{
@@ -44,8 +48,8 @@ Si hay un número impar de elementos, el valor central es el valor del medio, ca
 >>> df[["column_name_1", "column_name_2"]].median()
 ```
 
-## truncated_mean()
-Se calcula ignorando un número fijo, en cada extremo, de valores ordenados y a continuación, se calcula el promedio de los valores restantes.
+## trim_mean()
+Conocida como la media truncada. Se calcula ignorando un número fijo, en cada extremo, de valores ordenados y a continuación, se calcula el promedio de los valores restantes.
 
 ```python
 >>> from scipy.stats import trim_mean
@@ -56,14 +60,15 @@ Se calcula ignorando un número fijo, en cada extremo, de valores ordenados y a 
 ```
 
 ## weighted_mean()
-Suma de todos los valores multiplicados por cada ponderación y dividida por la suma de las ponderaciones.
+La media ponderada es la suma de todos los valores multiplicados por cada ponderación y dividida por la suma de las ponderaciones.
 
 ```python
+>>> import numpy as np
 >>> np.average(df["column_name"], weights=df["other_column_name"])
 ```
 
 ## weighted_median()
-Valor tal que la mitad de la suma de las ponderaciones se encuentra por encima y la otra mitad por debajo de los datos ordenados.
+La mediana ponderada es el valor tal que la mitad de la suma de las ponderaciones se encuentra por encima y la otra mitad por debajo de los datos ordenados.
 
 ```python
 >>> import wquantiles
@@ -81,7 +86,9 @@ Devuelve el valor más frecuente de cada columna.
 También, puedes especificar las columnas a utilizar.
 
 ```python
->>> df.mode(subset=["column_name"])
+>>> df["column_name"].mode()
+# o
+>>> df[["column_name_1", "column_name_2"]].mode()
 ```
 
 ## corr()
@@ -95,8 +102,7 @@ Calcula la correlación entre las columnas numéricas del DataFrame.
 También, puedes especificar las columnas a utilizar.
 
 ```python
->>> df.corr(x=["column_name_1", "column_name_2"], 
-...					y=["column_name_3", "column_name_4"])
+>>> df[["column_name_1", "column_name_2"]].corr()
 ```
 
 ## cov()
@@ -110,6 +116,54 @@ Calcula la covarianza entre las columnas numéricas del DataFrame.
 También, puedes especificar las columnas a utilizar.
 
 ```python
->>> df.cov(x=["column_name_1", "column_name_2"], 
-...				y=["column_name_3", "column_name_4"])
+>>> df[["column_name_1", "column_name_2"]].cov()
 ```
+
+## var()
+
+Es el promedio del cuadrado de las desviaciones de los datos.
+La varianza es sensible a los valores atípicos.
+
+```python
+>>> df["column_name"].var()
+# o
+>>> df[["column_name_1", "column_name_2"]].var()
+```
+
+## std()
+
+Es la raíz cuadrada de la varianza.
+La desviación estándar es sensible a los valores atípicos.
+
+```python
+>>> df["column_name"].std()
+# o
+>>> df[["column_name_1", "column_name_2"]].std()
+```
+
+## mad()
+
+Para tener una estimación robusta de la variabilidad se suele aplicar la desviación absoluta mediana de la mediana. También conocida como MAD por sus siglas _median absolute deviation from the median_.
+
+```python
+>>> from statsmodels import robust
+>>> robust.scale.mad(df["column_name"])
+# o
+>>> robust.scale.mad(df[["column_name_1", "column_name_2"]])
+```
+
+## quantile()
+
+Devuelve el valor del cuartil especificado.
+
+```python
+>>> df["column_name"].quantile(0.25)
+# o
+>>> df["column_name"].quantile([0.05, 0.25, 0.5, 0.75, 0.95])
+# o
+>>> df[["column_name_1", "column_name_2"]].quantile(0.25)
+# o
+>>> df[["column_name_1", "column_name_2"]].quantile([0.05, 0.25, 0.5, 0.75, 0.95])
+```
+
+
