@@ -1,6 +1,6 @@
 ---
 import Layout from "@layouts/Layout.astro";
-import HomeLayout from "@layouts/HomeLayout.astro";
+import ArticleLayout from "@layouts/ArticleLayout.astro";
 import NavigationContainer from "@components/NavigationContainer.astro";
 const mainDirectoryPage = [
   {
@@ -12,7 +12,7 @@ const mainDirectoryPage = [
 ---
 
 <Layout>
-  <HomeLayout>
+  <ArticleLayout>
     <article class="flex flex-col max-w-full xl:max-w-2xl">
       <div class="flex flex-col gap-2">
         <h1 id="title-main" class="text-left">Machine Learning</h1>
@@ -22,9 +22,7 @@ const mainDirectoryPage = [
         >
           Cheat Sheet en Python
         </h2>
-        <h3
-          class="pt-4 text-slate-200 text-left text-xl font-semibold"
-        >
+        <h3 class="pt-4 text-slate-200 text-left text-xl font-semibold">
           Basado en el libro <a class="text-[#38BDF8]"
             >Python Machine Learning</a
           >
@@ -118,12 +116,12 @@ const mainDirectoryPage = [
       </div>
       <div class="flex flex-col">
         <h2 class="text-left">Contribuidores</h2>
-        <p class="text-left font-light"
-          >Gracias a la comunidad de desarrolladores, analistas y científicos de
-          datos que colaboran para mejorar y expandir esta guía.</p
-        >
+        <p class="text-left font-light">
+          Gracias a la comunidad de desarrolladores, analistas y científicos de
+          datos que colaboran para mejorar y expandir esta guía.
+        </p>
       </div>
       <NavigationContainer data={mainDirectoryPage} />
     </article>
-  </HomeLayout>
+  </ArticleLayout>
 </Layout>

@@ -1,7 +1,7 @@
 ---
 import { getCollection, render } from "astro:content";
 import Layout from "@layouts/Layout.astro";
-import HomeLayout from "@layouts/HomeLayout.astro";
+import ArticleLayout from "@layouts/ArticleLayout.astro";
 import NavigationContainer from "@components/NavigationContainer.astro";
 
 export async function getStaticPaths() {
@@ -23,7 +23,7 @@ const { Content } = await render(item);
 ---
 
 <Layout>
-  <HomeLayout>
+  <ArticleLayout>
     <div class="max-w-full xl:max-w-2xl w-full">
       <h1 class="text-left">{title}</h1>
       <Content />
@@ -53,5 +53,5 @@ const { Content } = await render(item);
         }
       </div>
     </div>
-  </HomeLayout>
+  </ArticleLayout>
 </Layout>
