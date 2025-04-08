@@ -1,6 +1,9 @@
 ---
 slug: random-forest
 title: Random Forest
+content: [
+	{slug: "", title: ""},
+]
 navigation: [
 	{
 		side: "left",

@@ -5,8 +5,8 @@ import ArticleLayout from "@layouts/ArticleLayout.astro";
 import NavigationContainer from "@components/NavigationContainer.astro";
 
 export async function getStaticPaths() {
-  const modelsInfo = await getCollection("modelsInfo");
-  return modelsInfo.map((item) => {
+  const supervisedModelsInfo = await getCollection("supervisedModelsInfo");
+  return supervisedModelsInfo.map((item) => {
     return {
       params: { slug: item.data.slug },
       props: {

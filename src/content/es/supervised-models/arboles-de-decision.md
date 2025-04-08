@@ -1,6 +1,9 @@
 ---
 slug: arboles-de-decision
 title: Árboles de decisión
+content: [
+	{slug: "", title: ""},
+]
 navigation: [
 	{
 		side: left,

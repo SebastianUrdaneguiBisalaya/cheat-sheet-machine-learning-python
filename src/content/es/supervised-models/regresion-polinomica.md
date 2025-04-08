@@ -1,6 +1,9 @@
 ---
 slug: regresion-polinomica
 title: Regresión Polinomial
+content: [
+	{slug: "", title: ""},
+]
 navigation: [
 	{
 		side: left,

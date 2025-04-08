@@ -1,6 +1,9 @@
 ---
 slug: knearest-neighbors
 title: K-Nearest Neighbors
+content: [
+	{slug: "", title: ""},
+]
 navigation: [
 	{
 		side: "left",

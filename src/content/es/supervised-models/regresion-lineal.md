@@ -1,6 +1,9 @@
 ---
 slug: regresion-lineal
 title: Regresión Lineal
+content: [
+	{slug: "", title: ""},
+]
 navigation: [
 	{
 		side: left,

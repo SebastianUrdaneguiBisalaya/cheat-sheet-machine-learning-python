@@ -1,6 +1,9 @@
 ---
 slug: gradient-boosting
 title: Gradient Boosting
+content: [
+	{slug: "", title: ""},
+]
 navigation: [
 	{
 		side: "left",

@@ -1,6 +1,9 @@
 ---
 slug: regresion-ridge-y-lasso
 title: Regresión Ridge y Lasso
+content: [
+	{slug: "", title: ""},
+]
 navigation: [
 		{
 		side: "left",

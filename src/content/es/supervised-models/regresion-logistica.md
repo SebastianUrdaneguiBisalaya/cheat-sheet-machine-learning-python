@@ -1,6 +1,9 @@
 ---
 slug: regresion-logistica
 title: Regresión Logistica
+content: [
+	{slug: "", title: ""},
+]
 navigation: [
 	{
 		side: "left",

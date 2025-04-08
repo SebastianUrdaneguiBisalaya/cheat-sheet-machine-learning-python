@@ -104,42 +104,42 @@
       {
         "slug": "regresion-lineal",
         "title": "Regresión Lineal",
-        "linkes": "/es/models/regresion-lineal"
+        "linkes": "/es/supervised-models/regresion-lineal"
       },
       {
         "slug": "regresion-polinomica",
         "title": "Regresión Polinómica",
-        "linkes": "/es/models/regresion-polinomica"
+        "linkes": "/es/supervised-models/regresion-polinomica"
       },
       {
         "slug": "regresion-ridge-y-lasso",
         "title": "Regresión Ridge y Lasso",
-        "linkes": "/es/models/regresion-ridge-y-lasso"
+        "linkes": "/es/supervised-models/regresion-ridge-y-lasso"
       },
       {
         "slug": "regresion-logistica",
         "title": "Regresión Logística",
-        "linkes": "/es/models/regresion-logistica"
+        "linkes": "/es/supervised-models/regresion-logistica"
       },
       {
         "slug": "knearest-neighbors",
         "title": "K-Nearest Neighbors",
-        "linkes": "/es/models/knearest-neighbors"
+        "linkes": "/es/supervised-models/knearest-neighbors"
       },
       {
         "slug": "arboles-de-decision",
         "title": "Árboles de Decisión",
-        "linkes": "/es/models/arboles-de-decision"
+        "linkes": "/es/supervised-models/arboles-de-decision"
       },
       {
         "slug": "random-forest",
         "title": "Random Forest",
-        "linkes": "/es/models/random-forest"
+        "linkes": "/es/supervised-models/random-forest"
       },
       {
         "slug": "gradient-boosting",
         "title": "Gradient Boosting",
-        "linkes": "/es/models/gradient-boosting"
+        "linkes": "/es/supervised-models/gradient-boosting"
       }
     ]
   },

@@ -63,10 +63,10 @@ const dataProcessingInfo = defineCollection({
   }),
 });
 
-const modelsInfo = defineCollection({
+const supervisedModelsInfo = defineCollection({
   loader: glob({
     pattern: ["*.md"],
-    base: "src/content/es/models",
+    base: "src/content/es/supervised-models",
   }),
   schema: z.object({
     slug: z.string(),
@@ -95,5 +95,5 @@ export const collections = {
   indexs,
   introductionInfo,
   dataProcessingInfo,
-  modelsInfo,
+  supervisedModelsInfo,
 };
