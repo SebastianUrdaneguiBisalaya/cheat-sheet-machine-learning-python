@@ -24,8 +24,8 @@ navigation: [
 	},
 	{
 		side: "right",
-		title: "Manejo de valores nulos",	
-		link: "manejo-de-valores-nulos",
+		title: "Manejo de valores ausentes",	
+		link: "manejo-de-valores-ausentes",
 	},
 ]
 ---

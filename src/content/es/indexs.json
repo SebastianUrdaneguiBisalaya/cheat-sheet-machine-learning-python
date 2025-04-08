@@ -56,9 +56,9 @@
 				"linkes": "/es/data-processing/estadistica-descriptiva"
 			},
       {
-        "slug": "manejo-de-valores-nulos",
-        "title": "Manejo de valores nulos",
-        "linkes": "/es/data-processing/manejo-de-valores-nulos"
+        "slug": "manejo-de-valores-ausentes",
+        "title": "Manejo de valores ausentes",
+        "linkes": "/es/data-processing/manejo-de-valores-ausentes"
       },
       {
         "slug": "deteccion-y-tratamiento-de-outliers",
@@ -86,9 +86,9 @@
         "linkes": "/es/data-processing/seleccion-de-caracteristicas"
       },
       {
-        "slug": "division-en-entrenamiento-pruebas-y-test",
-        "title": "División en entrenamiento, pruebas y test",
-        "linkes": "/es/data-processing/division-en-entrenamiento-pruebas-y-test"
+        "slug": "division-de-datos-para-entrenamiento-y-test",
+        "title": "División de datos para entrenamiento y test",
+        "linkes": "/es/data-processing/division-de-datos-para-entrenamiento-y-test"
       },
       {
         "slug": "balanceo-de-datos",
