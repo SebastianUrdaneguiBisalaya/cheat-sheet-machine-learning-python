@@ -112,9 +112,9 @@
         "linkes": "/es/supervised-models/regresion-polinomica"
       },
       {
-        "slug": "regresion-ridge-y-lasso",
-        "title": "Regresión Ridge y Lasso",
-        "linkes": "/es/supervised-models/regresion-ridge-y-lasso"
+        "slug": "regresion-lasso-y-ridge",
+        "title": "Regresión Lasso y Ridge",
+        "linkes": "/es/supervised-models/regresion-lasso-y-ridge"
       },
       {
         "slug": "regresion-logistica",

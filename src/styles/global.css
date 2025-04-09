@@ -80,3 +80,39 @@ html::-webkit-scrollbar-thumb, .scrollbar::-webkit-scrollbar-thumb, pre::-webkit
 		scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
 	}
 }
+
+div .markdown-alert {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+.table-wrapper {
+	width: 100%;
+	overflow-x: auto;
+}
+
+.table-wrapper table {
+	width: 100%;
+	min-width: 600px;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+table th {
+	text-align: left;
+	background-color: var(--color-background);
+	padding: 0.5rem;
+	color: #cccccc;
+	border-bottom: 1px solid #cccccc;
+}
+
+table td {
+	text-align: left;
+	padding: 0.5rem;
+	color: #cccccc;
+	border-bottom: 1px solid #cccccc;
+}

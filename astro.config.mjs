@@ -2,6 +2,7 @@
 import { defineConfig } from "astro/config";
 
 import tailwindcss from "@tailwindcss/vite";
+import { remarkAlert } from "remark-github-blockquote-alert";
 
 // https://astro.build/config
 export default defineConfig({
@@ -10,6 +11,7 @@ export default defineConfig({
   },
   markdown: {
     syntaxHighlight: "prism",
+    remarkPlugins: [remarkAlert],
   },
   i18n: {
     defaultLocale: "es",

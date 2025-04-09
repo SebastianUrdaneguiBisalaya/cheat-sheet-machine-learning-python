@@ -30,7 +30,7 @@ La razón por la que se produce el sobreajuste es que nuestro modelo es demasiad
 
 La **regularización L1** suele utilizarse en conjunto de datos de dimensiones mayores con muchas características que son irrelevantes, especialmente en casos donde se tiene más dimensiones irrelevantes que muestras porque fuerza algunos coeficientes a ser exactamente cero, eliminando las características irrelevantes, dado que agrega una penalización basada en la suma de los valores absolutos de los coeficientes.
 
-Pueden utilizarse en modelos como regresión lineal Lasso, regresión logística, ElasticNet,SGDClassifier y SGDRegressor, estos dos últimos son modelos clasificadores/regresores lineales entrenados con el descenso del gradiente estocástico (SGD). 
+Pueden utilizarse en modelos como regresión lineal Lasso, regresión logística, Elastic Net,SGDClassifier y SGDRegressor, estos dos últimos son modelos clasificadores/regresores lineales entrenados con el descenso del gradiente estocástico (SGD). 
 
 ```python
 # En este caso, utilizaremos el modelo de regresión logística
