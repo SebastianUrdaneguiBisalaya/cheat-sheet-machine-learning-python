@@ -37,7 +37,7 @@ Una de las funciones más sencillas para tratar con los valores ausentes en un d
 
 ## fillna()
 
-Se utiliza para rellenar los valors `NAN` en un dataframe con un valor específico.
+Se utiliza para rellenar los valors `NAN` en un DataFrame con un valor específico.
 
 ```python
 >>> df.fillna(0) # Rellena todos los NaN con 0
@@ -51,7 +51,7 @@ Se utiliza para rellenar los valors `NAN` en un dataframe con un valor específi
 
 ## replace()
 
-Se utiliza para reemplazar los valores específico en un dataframe, incluyendo valores `NaN`.
+Se utiliza para reemplazar los valores específico en un DataFrame, incluyendo valores `NaN`.
 
 ```python
 >>> df.replace(np.nan, 0) # Reemplaza todos los NaN con 0
@@ -63,7 +63,7 @@ Se utiliza para reemplazar los valores específico en un dataframe, incluyendo v
 
 ## interpolate()
 
-Es una herramienta útil para rellenar los valores `NaN` en un dataframe o serie. A diferencia de `fillna()`, que rellena los valores `NAN` con un valor constante o un método de rellendo directo, la función `interpolate()` estima los valores faltantes basándose en los valores circundantes.
+Es una herramienta útil para rellenar los valores `NaN` en un DataFrame o serie. A diferencia de `fillna()`, que rellena los valores `NAN` con un valor constante o un método de rellendo directo, la función `interpolate()` estima los valores faltantes basándose en los valores circundantes.
 
 Suele utilizarse para rellenar los datos de series de tiempo, donde los valores faltantes pueden ser estimados basándose en tendencias temporales.
 

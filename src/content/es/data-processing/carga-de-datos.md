@@ -30,7 +30,7 @@ más populares para el análisis de datos.
 
 ```python
 >>> import pandas as pd
->>> from pandas import DataFrame # Definir el tipo de dataframe
+>>> from pandas import DataFrame # Definir el tipo de DataFrame
 ```
 
 ## Carga de datos desde un archivo CSV		

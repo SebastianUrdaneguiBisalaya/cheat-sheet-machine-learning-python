@@ -113,6 +113,12 @@ Devuelve un DataFrame de valores booleanos indicando si cada valor es nulo o no.
 >>> df.isnull()
 ```
 
+Retorna una serie de valores donde el índice de la serie corresponde al nombre de la columna de DataFrame original y los valores de la serie muestran el recuento de valores nulos en cada columna.
+
+```python
+>>> df.isnull().sum()
+```
+
 ## sort_values()
 
 Ordenar las filas en función de una columna específica.

@@ -56,7 +56,7 @@ Crea una columna binaria por cada categoría, esta técnica es conocida como cod
 >>> ohe = OneHotEncoder()
 >>> onehot = ohe.fit_transform(df[["column_name"]])
 
-# Convertir a dataframe
+# Convertir a DataFrame
 >>> column_names = ohe.get_feature_names_out(["column_name"])
 >>> onehot_df = pd.DataFrame(onehot, columns = column_names)
 ```
