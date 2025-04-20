@@ -6,7 +6,7 @@ content: [
 	{slug: "fillna", title: "fillna()"},
 	{slug: "replace", title: "replace()"},
 	{slug: "interpolate", title: "interpolate()"},
-	{slug: "imputer", title: "imputer()"},
+	{slug: "simpleimputer", title: "SimpleImputer()"},
 ]
 navigation: [
 	{
@@ -32,7 +32,7 @@ Una de las funciones más sencillas para tratar con los valores ausentes en un d
 >>> df.dropna(axis = 1) # Elimina las columnas que contienen al menos un valor ausente
 >>> df.dropna(how = "all") # Elimina las filas o columnas donde todos los valores sean nulos
 >>> df.dropna(thresh = 2) # Elimina las filas o columnas que contienen al menos dos valores ausentes
->>> df.dropna(subset = ["column_name"]) # Elimina las filas o columnas que contienen `NAN` en la columna especificada
+>>> df.dropna(subset = ["column_name"]) # Elimina las filas o columnas que contienen al menos un `NAN` en la columna especificada
 ```
 
 ## fillna()
@@ -87,19 +87,21 @@ Suele utilizarse para rellenar los datos de series de tiempo, donde los valores 
 >>> df.interpolate(limit_area='outside') # Aplica el límite a los extremos
 ```
 
-## imputer()
+## SimpleImputer()
 
-Una de las técnicas de interpolación más conocida es la `imputación por medias`, donde simplemente se sustituye el valor ausente por el valor medio de toda la columna de características.
+Es una clase de `scikit-learn` usada para imputar valores faltantes en un conjunto de datos. Una estrategia común es reemplazar los valores ausentes con la media, mediana, el valor más frecuente, o un valor constante.
 
 ```python
->>> from sklearn.preprocessing import Imputer
->>> imr = Imputer(missing_values = "NaN", strategy = "mean", axis = 0)
-# strategy = "mean" o "most_frequent" 'most_frequent' es útil para variables categóricas
-# axis = 0 o 1 (0 = columnas, 1 = filas)
->>> imr = imr.fit(df.values)
->>> imputed_data = imr.transform(df.values)
+>>> import numpy as np
+>>> import pandas as pd
+>>> from sklearn.impute import SimpleImputer
+>>> imr = SimpleImputer(missing_values = np.nan, strategy = "mean")
+# missing_values = np.nan o pd.NA
+# strategy = "mean", "median", "most_frequent" o "constant"
+>>> imputed_data = imr.fit_transform(df.values)
+>>> imputed_df = pd.DataFrame(imputed_data, columns = df.columns)
 ```
 
-La clase `Imputer` pertence a las clases transformadores de `scikit-learn`, que se utilizan para la transformación de datos. Los dos métodos más esenciales de estos estimadores son `fit()` y `transform()`.
+Por ejemplo, al usar `strategy = "mean"`, los valores ausentes en una columna serán reemplazados por la media de todas las observaciones de esa columna.
 
-El método `fit()` se utiliza para aprender los parámetros a partir de los datos de entrenamiento y el método `transform()` utiliza estos parámetros para transformar los datos.
+La clase sigue la interfaz de los transformadores de `scikit-learn`, usando los métodos `fit()` para aprender de los datos y `transform()` para aplicar los valores imputados.
