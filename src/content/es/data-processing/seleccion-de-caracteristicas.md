@@ -33,28 +33,25 @@ La **regularización L1** suele utilizarse en conjunto de datos de dimensiones m
 Pueden utilizarse en modelos como regresión lineal Lasso, regresión logística, Elastic Net,SGDClassifier y SGDRegressor, estos dos últimos son modelos clasificadores/regresores lineales entrenados con el descenso del gradiente estocástico (SGD). 
 
 ```python
-# En este caso, utilizaremos el modelo de regresión logística
->>> from sklearn.linear_model import LogisticRegression
->>> lr = LogisticRegression(penalty = "l1", C = 1) # 'C' representa la inversa del parámetro de regularización
->>> lr.fit(X_train, y_train)
-
->>> print(f"Training accuracy: {lr.score(X_train, y_train)}")
->>> print(f"Test accuracy: {lr.score(X_test, y_test)}")
+# Regresión lineal con L1 (Lasso)
+>>> from sklearn.linear_model import Lasso
+>>> lasso = Lasso(alpha = 1, random_state = 42)
+>>> lasso.fit(X_train, y_train)
+>>> print(f"Coeficientes Lasso: {lasso.coef_}")
 ```
 
 ## Regularización L2
 
 A diferencia de la regularización L1, **la regularización L2** agrega una penalización basada en la suma de los cuadrados de los coeficientes, es decir, reduce todos los coeficientes pero no se vuelven exactamente cero, por lo que no elimina las características irrelevantes.
 
-Entonces, sería útil cuando se desea analizar las dimensiones que tienen coeficientes pequeños—potencialmente menos importantes—que pueden ser eliminadas para reducir la dimensionalidad del modelo.
+Entonces, sería útil cuando se desea analizar las dimensiones que tienen coeficientes pequeños—potencialmente menos importantes—que pueden ser eliminados para reducir la dimensionalidad del modelo.
 
 ```python
->>> from sklearn.linear_model import LogisticRegression
->>> lr_l2 = LogisticRegression(penalty="l2", C=1)
->>> lr_l2.fit(X_train, y_train)
-
->>> print(f"Training accuracy: {lr_l2.score(X_train, y_train)}")
->>> print(f"Test accuracy: {lr_l2.score(X_test, y_test)}")
+# Regresión lineal con L2 (Ridge)
+>>> from sklearn.linear_model import Ridge
+>>> ridge = Ridge(alpha = 1, random_state = 42)
+>>> ridge.fit(X_train, y_train)
+>>> print(f"Coeficientes Ridge: {ridge.coef_}")
 ```
 
 ## Reducción de dimensionalidad
