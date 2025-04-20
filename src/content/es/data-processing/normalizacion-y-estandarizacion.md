@@ -34,9 +34,11 @@ Básicamente, la normalización se refiere al escalamiento de los datos a un ran
 La clase `MinMaxScaler` pertenece a las clases de `scikit-learn`, que se utiliza para escalar los datos para que estén en el rango [0, 1].
 
 ```python
+>>> import pandas as pd
 >>> from sklearn.preprocessing import MinMaxScaler
 >>> scaler = MinMaxScaler()
 >>> df_scaled = scaler.fit_transform(df)
+>>> df_scaled = pd.DataFrame(df_scaled, columns = df.columns)
 # o
 >>> df_scaled = scaler.fit_transform(df[["column_name"]])
 ```
@@ -54,9 +56,11 @@ La clase `MinMaxScaler` pertenece a las clases de `scikit-learn`, que se utiliza
 La clase `StandardScaler` pertenece a las clases de `scikit-learn`, que se utiliza para escalar los datos para que tengan una media cero y una varianza unitaria.
 
 ```python
+>>> import pandas as pd
 >>> from sklearn.preprocessing import StandardScaler
 >>> scaler = StandardScaler()
 >>> df_standardized = scaler.fit_transform(df)
+>>> df_standardized = pd.DataFrame(df_standardized, columns = df.columns)
 # o
 >>> df["column_name_std"] = scaler.fit_transform(df[["column_name"]])
 ```
@@ -74,9 +78,11 @@ La clase `StandardScaler` pertenece a las clases de `scikit-learn`, que se utili
 Escala los datos según la mediana y el rango intercuartílico, útil cuando el dataset tiene outliers.
 
 ```python
+>>> import pandas as pd
 >>> from sklearn.preprocessing import RobustScaler
 >>> scaler = RobustScaler()
 >>> df_robust_scaled = scaler.fit_transform(df)	
+>>> df_robust_scaled = pd.DataFrame(df_robust_scaled, columns = df.columns)
 ```
 
 ## Normalizer
@@ -84,9 +90,11 @@ Escala los datos según la mediana y el rango intercuartílico, útil cuando el 
 Normaliza las filas, no las columnas. Convierte cada fila a un vector de norma 1 (útil en datos dispersos como texto).
 
 ```python
+>>> import pandas as pd
 >>> from sklearn.preprocessing import Normalizer
 >>> norm = Normalizer()
 >>> df_normalized = norm.fit_transform(df)
+>>> df_normalized = pd.DataFrame(df_normalized, columns = df.columns)
 ```
 
 ## QuantileTransformer
@@ -94,9 +102,11 @@ Normaliza las filas, no las columnas. Convierte cada fila a un vector de norma 1
 Transforma los datos a una distribución uniforme o normal utilizando cuantiles. Muy útil para normalizar las distribuciones de datos no gaussianas.
 
 ```python
+>>> import pandas as pd
 >>> from sklearn.preprocessing import QuantileTransformer
 >>> qt = QuantileTransformer(output_distribution = "normal") # o "uniform"
 >>> df_quantile_transformed = qt.fit_transform(df)
+>>> df_quantile_transformed = pd.DataFrame(df_quantile_transformed, columns = df.columns)
 ```
 
 ## PowerTransformer
@@ -104,8 +114,10 @@ Transforma los datos a una distribución uniforme o normal utilizando cuantiles.
 Aplica una transformación que hace que los datos se parezcan más a una distribución normal. Usa transformaciones como Yeo-Johnson o Box-Cox.
 
 ```python
+>>> import pandas as pd
 >>> from sklearn.preprocessing import PowerTransformer
 >>> pt = PowerTransformer(method = "yeo-johnson") # o 'box-cox' si no hay ceros o negativos
 >>> df_power_transformed = pt.fit_transform(df)
+>>> df_power_transformed = pd.DataFrame(df_power_transformed, columns = df.columns)
 ```
 
