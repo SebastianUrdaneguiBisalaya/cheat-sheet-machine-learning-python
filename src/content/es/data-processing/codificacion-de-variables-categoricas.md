@@ -58,7 +58,9 @@ Crea una columna binaria por cada categoría, esta técnica es conocida como cod
 
 # Convertir a DataFrame
 >>> column_names = ohe.get_feature_names_out(["column_name"])
->>> onehot_df = pd.DataFrame(onehot, columns = column_names)
+# onehot es un sparse matrix, no un DataFrame normal ni una matriz densa (ndarray)
+# Entonces, debemos convertir el resultado a una matriz densa con .toarray()
+>>> onehot_df = pd.DataFrame(onehot.toarray(), columns = column_names)
 ```
 
 Una de las desventajas es que puede aumentar la dimensión de los datos si hay muchas categorías.
