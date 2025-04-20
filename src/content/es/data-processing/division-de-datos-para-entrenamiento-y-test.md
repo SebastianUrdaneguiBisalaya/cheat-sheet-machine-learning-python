@@ -7,13 +7,13 @@ content: [
 navigation: [
 	{
 		side: "left",
-		title: "Selección de características",
-		link: "seleccion-de-caracteristicas",
+		title: "Creación de nuevas características",	
+		link: "creacion-de-nuevas-caracteristicas",
 	},
 	{
 		side: "right",
-		title: "Balanceo de datos",
-		link: "balanceo-de-datos",
+		title: "Selección de características",	
+		link: "seleccion-de-caracteristicas",
 	},
 ]
 ---

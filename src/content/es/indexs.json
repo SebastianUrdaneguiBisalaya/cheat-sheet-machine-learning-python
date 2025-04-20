@@ -80,15 +80,15 @@
         "title": "Creación de nuevas características",
         "linkes": "/es/data-processing/creacion-de-nuevas-caracteristicas"
       },
+			{
+        "slug": "division-de-datos-para-entrenamiento-y-test",
+        "title": "División de datos para entrenamiento y test",
+        "linkes": "/es/data-processing/division-de-datos-para-entrenamiento-y-test"
+      },
       {
         "slug": "seleccion-de-caracteristicas",
         "title": "Selección de características",
         "linkes": "/es/data-processing/seleccion-de-caracteristicas"
-      },
-      {
-        "slug": "division-de-datos-para-entrenamiento-y-test",
-        "title": "División de datos para entrenamiento y test",
-        "linkes": "/es/data-processing/division-de-datos-para-entrenamiento-y-test"
       },
       {
         "slug": "balanceo-de-datos",

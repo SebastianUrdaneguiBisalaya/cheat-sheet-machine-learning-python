@@ -9,13 +9,13 @@ content: [
 navigation: [
 	{
 		side: "left",
-		title: "Creación de nuevas características",
-		link: "creacion-de-nuevas-caracteristicas",
+		title: "División de datos para entrenamiento y test",
+		link: "division-de-datos-para-entrenamiento-y-test",
 	},
 	{
 		side: "right",
-		title: "División de datos para entrenamiento y test",
-		link: "division-de-datos-para-entrenamiento-y-test",
+		title: "Balanceo de datos",
+		link: "balanceo-de-datos",
 	}
 ]
 ---

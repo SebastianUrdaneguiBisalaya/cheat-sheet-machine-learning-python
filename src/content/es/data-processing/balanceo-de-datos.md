@@ -12,8 +12,8 @@ content: [
 navigation: [
 	{
 		side: "left",
-		title: "División de datos para entrenamiento y test",
-		link: "division-de-datos-para-entrenamiento-y-test",
+		title: "Selección de características",
+		link: "seleccion-de-caracteristicas",
 	},
 	{
 		side: "right",
