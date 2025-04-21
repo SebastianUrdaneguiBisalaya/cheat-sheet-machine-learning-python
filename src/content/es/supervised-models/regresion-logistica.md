@@ -23,7 +23,7 @@ navigation: [
 La **regresión logística** es equivalente a la regresión lineal múltiple con la excepción de que el resultado es un valor binario, es decir, 0 o 1, dependiendo de si la probabilidad de que la variable de salida tome el valor 1 es mayor que la probabilidad de que tome el valor 0.
 
 ```python
->>> from sklearn.linear_model.LogisticRegression
+>>> from sklearn.linear_model import LogisticRegression
 >>> model = LogisticRegression(penalty = 'l2', C = 1e42, solver = "liblinear")
 >>> model.fit(X_train, y_train)
 

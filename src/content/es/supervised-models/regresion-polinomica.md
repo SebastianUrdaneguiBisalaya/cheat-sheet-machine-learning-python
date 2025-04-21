@@ -26,6 +26,9 @@ El objetivo de la regresión polinomial es encontrar una relación no lineal ent
 >>> from sklearn.preprocessing import PolynomialFeatures
 >>> poly = PolynomialFeatures(degree=2, interaction_only=False,
 ... 	include_bias=True, order='C')
+>>> X_poly = poly.fit_transform(df[["column_predictor", "column_predictor_2"]])
+>>> print("Características polinómicas transformadas:")
+>>> print(X_poly)
 ```
 
 **degree**

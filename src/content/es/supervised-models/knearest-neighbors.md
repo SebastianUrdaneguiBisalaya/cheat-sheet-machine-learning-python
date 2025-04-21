@@ -29,8 +29,8 @@ A diferencia de los modelos lineales, este no aprende parámetros durante el ent
 >>> from sklearn.neighbors import KNeighborsClassifier
 >>> model = KNeighborsClassifier(n_neighbors=5, weights='uniform', algorithm='auto', p=2, metric='minkowski', metric_params=None, n_jobs=None)
 >>> model.fit(X_train, y_train)
->>> print(model.predict([[1.1]]))
->>> print(model.predict_proba([[0.9]]))
+>>> print(model.predict(X_train[:1]))
+>>> print(model.predict_proba(X_train[:1]))
 ```
 
 **n_neighbors**
@@ -58,7 +58,7 @@ Indica el parámetro de fuerza de la métrica de _Minkowski_. Por defecto es 2, 
 Determina la métrica para computar la distancia entre los puntos. Por defecto usa la métrica de _Minkowski_ con parámetro _p=2_.
 
 
-## KNeighborsRegressor
+## [KNeighborsRegressor](https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsRegressor.html)
 
 El regresor de vecinos más cercanos (**K-Nearest Neighbors Regressor**) funciona de manera similar al clasificador, pero devuelve un valor numérico como promedio (ponderado o no) de los valores de los vecinos más cercanos.
 
@@ -66,4 +66,5 @@ El regresor de vecinos más cercanos (**K-Nearest Neighbors Regressor**) funcion
 >>> from sklearn.neighbors import KNeighborsRegressor
 >>> model = KNeighborsRegressor(n_neighbors=5, weights='uniform', algorithm='auto', leaf_size=30, p=2, metric='minkowski', metric_params=None, n_jobs=None)
 >>> model.fit(X_train, y_train)
+>>> print(model.predict(X_train[:1]))
 ```
