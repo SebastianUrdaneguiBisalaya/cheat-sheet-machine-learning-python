@@ -4,7 +4,7 @@ title: Detección y tratamiento de outliers
 content: [
 	{slug: "boxplot-outliers", title: "Boxplot outliers"},
 	{slug: "scatter-plot-outliers", title: "Scatter plot outliers"},
-	{slug: "z-core-outliers", title: "Z-core outliers"},
+	{slug: "z-score-outliers", title: "Z-score outliers"},
 	{slug: "iqr", title: "IQR"},
 	{slug: "isolation-forest", title: "Isolation Forest"},
 	{slug: "local-outlier-factor", title: "Local Outlier Factor"},

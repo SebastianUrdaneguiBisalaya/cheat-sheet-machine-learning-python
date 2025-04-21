@@ -10,7 +10,6 @@ content: [
 	{slug: "mode", title: "mode()"},
 	{slug: "corr", title: "corr()"},
 	{slug: "cov", title: "cov()"},
-	{slug: "mean", title: "mean()"},
 	{slug: "var", title: "var()"},
 	{slug: "std", title: "std()"},
 	{slug: "mad", title: "mad()"},

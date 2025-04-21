@@ -2,8 +2,8 @@
 slug: gradient-boosting
 title: Gradient Boosting
 content: [
-	{slug: "gradient-boosting", title: "GradientBoostingClassifier"},
-	{slug: "gradient-boosting-regressor", title: "GradientBoostingRegressor"},
+	{slug: "gradientboostingclassifier", title: "GradientBoostingClassifier"},
+	{slug: "gradientboostingregressor", title: "GradientBoostingRegressor"},
 ]
 navigation: [
 	{

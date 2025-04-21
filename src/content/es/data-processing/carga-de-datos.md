@@ -6,7 +6,7 @@ content: [
 	{slug: "carga-de-datos-desde-un-archivo-excel", title: "Carga de datos desde un archivo Excel"},
 	{slug: "carga-de-datos-desde-un-archivo-json", title: "Carga de datos desde un archivo JSON"},
 	{slug: "carga-de-datos-desde-un-archivo-txt", title: "Carga de datos desde un archivo TXT"},
-	{slug: "carga-de-datos-desde-un-archivo-sql", title: "Carga de datos desde un archivo SQL"},
+	{slug: "carga-de-datos-desde-sql", title: "Carga de datos desde SQL"},
 ]
 navigation: [
 	{
@@ -66,7 +66,7 @@ más populares para el análisis de datos.
 >>> print(df.head())
 ```
 
-## Carga de datos desde un archivo SQL
+## Carga de datos desde SQL
 
 ```python
 >>> from sqlalchemy import create_engine # Aplica para conectarse a PostgreSQL, MySQL/MariaDB y SQL Server 

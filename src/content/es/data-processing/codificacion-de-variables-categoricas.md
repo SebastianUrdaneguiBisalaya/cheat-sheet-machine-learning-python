@@ -3,8 +3,8 @@ slug: codificacion-de-variables-categoricas
 title: Codificación de variables categorías
 content: [
 	{slug: "convertir-caracteristicas-ordinales-a-enteros", title: "Convertir características ordinales a enteros"},
-	{slug: "label-encoder", title: "LabelEncoder"},
-	{slug: "one-hot-encoder", title: "OneHotEncoder"},
+	{slug: "label-encoder", title: "LabelEncoder()"},
+	{slug: "one-hot-encoder", title: "OneHotEncoder()"},
 	{slug: "get-dummies", title: "get_dummies()"},
 ]
 navigation: [
@@ -35,7 +35,7 @@ navigation: [
 
 Se recomienda no utilizar este método cuando el orden de la variable no es significativo.
 
-## LabelEncoder
+## LabelEncoder()
 
 Convierte las etiquetas categóricas a enteros. Ideal para variables sin orden lógico, pero cuidado porque no respeta las relaciones entre los valores.
 
@@ -47,7 +47,7 @@ Convierte las etiquetas categóricas a enteros. Ideal para variables sin orden l
 
 No se recomienda utilizar en algoritmos sensibles al orden (como regresión lineal) porque asigna números arbitrarios a las categorías.
 
-## OneHotEncoder
+## OneHotEncoder()
 
 Crea una columna binaria por cada categoría, esta técnica es conocida como codificación **one-hot**.
 

@@ -2,8 +2,8 @@
 slug: creacion-de-nuevas-caracteristicas
 title: Creación de nuevas características
 content: [
-	{slug: "transformacion-logaritmica", title: "Transformación logaritmica"},
-	{slug: "medias-moviles", title: "Medias móviles"},
+	{slug: "transformación-logarítmica", title: "Transformación logarítmica"},
+	{slug: "medias-móviles", title: "Medias móviles"},
 	{slug: "cambios-porcentuales", title: "Cambios porcentuales"},
 ]
 navigation: [
@@ -20,7 +20,7 @@ navigation: [
 ]
 ---
 
-## Transformación logaritmica
+## Transformación logarítmica
 
 Aplica el **logaritmo natural (base _e_)** a los valores de una columna.
 
