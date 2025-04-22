@@ -2,6 +2,7 @@
 import "remark-github-blockquote-alert/alert.css";
 import { getCollection } from "astro:content";
 import Logo from "@components/Logo.astro";
+import Search from "@components/Search.astro";
 const indexs = await getCollection("indexs");
 
 interface Index {
@@ -56,6 +57,7 @@ interface Index {
 						></svg
 					>
 				</div> -->
+				<Search />
 				<a href="https://github.com/SebastianUrdaneguiBisalaya/cheat-sheet-machine-learning-python" target="_blank" rel="noopener noreferrer">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"

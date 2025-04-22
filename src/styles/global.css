@@ -3,7 +3,7 @@
 @import "./prism.css";
 
 h1 {
-	font-size: 36px;
+	font-size: 34px;
 	line-height: 1.2;
 	font-family: "Lexend Variable", sans-serif;
 	font-weight: 700;
@@ -20,7 +20,7 @@ h2, h3 {
 }
 
 h2:not(#second-main-title) {
-	font-size: 20px;
+	font-size: 18px;
 	line-height: 1.25;
 	color: #FFFFFF;
 	width: 100%;
@@ -36,7 +36,7 @@ h2:is(#repository, #contribute) {
 }
 
 p {
-	font-size: 16px;
+	font-size: 15px;
 	line-height: 1.6;
 	font-family: "Lexend Variable", sans-serif;
 }
@@ -46,17 +46,21 @@ p:not(#name-logo, #name-of-navigation-pages) {
 }
 
 span {
-	font-size: 14px;
+	font-size: 13px;
 	font-family: "Lexend Variable", sans-serif;
 	color: #cccccc;
 }
 
-span:hover {
+span:hover:not(#search-text) {
 	color: var(--color-blue-strong);
 }
 
 strong {
 	color: var(--color-blue-strong);
+}
+
+input {
+	font-family: "Lexend Variable", sans-serif;
 }
 
 ins {

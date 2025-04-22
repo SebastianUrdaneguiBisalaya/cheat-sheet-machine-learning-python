@@ -1,0 +1,34 @@
+<button
+  id="searchbox"
+  type="button"
+  class="cursor-pointer border border-gray-600 hover:border-blue-500 rounded-lg flex flex-row items-center justify-between gap-4 px-5 py-2"
+>
+  <div class="flex items-center justify-center">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="20"
+      height="20"
+      viewBox="0 0 24 24"
+      ><path
+        fill="none"
+        stroke="#ffffff"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="m21 21l-4.343-4.343m0 0A8 8 0 1 0 5.343 5.343a8 8 0 0 0 11.314 11.314"
+      ></path></svg
+    >
+  </div>
+  <span id="search-text" class="text-gray-300 font-lexend text-sm font-light"
+    >Buscar</span
+  >
+</button>
+
+<script>
+  const buttonSearch = document.getElementById("searchbox");
+  const containerSearch = document.getElementById("container-search");
+  buttonSearch?.addEventListener("click", () => {
+    containerSearch?.classList.remove("hidden");
+    document.body.classList.add("overflow-y-hidden");
+  });
+</script>

@@ -1,0 +1,54 @@
+<div
+  id="container-search"
+  class="fixed inset-0 z-50 overflow-y-auto scrollbar backdrop-blur"
+  role="dialog"
+>
+  <div
+    class="max-w-3xl mx-auto flex flex-col justify-start items-center pt-20 mb-5 w-full"
+  >
+    <input
+      type="text"
+      class="w-full border border-gray-600 rounded-lg focus:outline-none focus:ring-0 px-4 py-3 bg-background text-gray-200"
+      placeholder="Buscar"
+    />
+  </div>
+
+  <div
+    id="hits"
+    class="max-w-3xl mx-auto w-full flex flex-col gap-4 justify-start items-start pt-5 mb-5"
+  >
+    <div
+      class="flex flex-row justify-between p-4 w-full border border-gray-600 rounded-lg bg-background/80"
+    >
+      <div class="flex flex-row gap-4 items-center justify-start">
+        <p>head()</p>
+        <span>Exploración de datos</span>
+      </div>
+      <div class="cursor-pointer flex items-center justify-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="25"
+          height="25"
+          viewBox="0 0 24 24"
+          ><path
+            fill="#ffffff"
+            d="M8.465 11.293c1.133-1.133 3.109-1.133 4.242 0l.707.707l1.414-1.414l-.707-.707c-.943-.944-2.199-1.465-3.535-1.465s-2.592.521-3.535 1.465L4.929 12a5.01 5.01 0 0 0 0 7.071a4.98 4.98 0 0 0 3.535 1.462A4.98 4.98 0 0 0 12 19.071l.707-.707l-1.414-1.414l-.707.707a3.007 3.007 0 0 1-4.243 0a3.005 3.005 0 0 1 0-4.243z"
+          ></path><path
+            fill="#ffffff"
+            d="m12 4.929l-.707.707l1.414 1.414l.707-.707a3.007 3.007 0 0 1 4.243 0a3.005 3.005 0 0 1 0 4.243l-2.122 2.121c-1.133 1.133-3.109 1.133-4.242 0L10.586 12l-1.414 1.414l.707.707c.943.944 2.199 1.465 3.535 1.465s2.592-.521 3.535-1.465L19.071 12a5.01 5.01 0 0 0 0-7.071a5.006 5.006 0 0 0-7.071 0"
+          ></path></svg
+        >
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const containerSearch = document.getElementById("container-search");
+  containerSearch?.addEventListener("click", (event) => {
+    if (event.target === containerSearch) {
+      containerSearch?.classList.add("hidden");
+      document.body.classList.remove("overflow-y-hidden");
+    }
+  });
+</script>
